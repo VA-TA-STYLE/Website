@@ -1,0 +1,130 @@
+.movies-intro {
+  max-width: 600px;
+  margin: 70px auto 60px;
+  text-align: center;
+  color: var(--text);
+}
+.movies-label {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.movies-intro h1 {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 4rem);
+  line-height: 1;
+}
+
+.movies-description {
+  max-width: 550px;
+  margin: 15px auto 0;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 50px 0 70px;
+}
+
+.pagination button {
+  min-width: 40px;
+  height: 40px;
+  padding: 0 15px;
+  border: 1px solid var(--pagination-button-border);
+  border-radius: 8px;
+  background: var(--pagination-button);
+  color: var(--text);
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: var(--pagination-button-hover);
+}
+
+.pagination button.active {
+  background: var(--pagination-button-active);
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+@media (max-width: 1440px) {
+  .movies-grid {
+    gap: 17px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .movies-label {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .movies-description {
+    font-size: 1.2rem;
+  }
+  .movies-grid {
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 960px) {
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .movies-grid {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    padding: 0 20px 20px 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .movies-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .movies-label {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .movies-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .movies-label {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .movies-description {
+    font-size: 1rem;
+  }
+}

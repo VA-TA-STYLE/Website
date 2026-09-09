@@ -1,0 +1,126 @@
+
+.main-movie-cards-wrapper {
+  margin-top: 50px;
+  gap: 20px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  scrollbar-width: none;
+  -webkit-mask-image: var(--entry-card-shadows);
+  mask-image: var(--entry-card-shadows);
+}
+.main-movie-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.main-movie-cards-track {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  animation: scrollCards 100s linear infinite;
+}
+
+.main-movie-cards-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollCards {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 10px));
+  }
+}
+.entry-card {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+  border: var(--entry-card-border);
+  box-shadow: var(--entry-card-box-shadow);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.entry-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--entry-card-border-color-hover);
+}
+
+.card-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.card-gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--card-overlay);
+  z-index: 2;
+}
+
+.card-content {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+  padding: 0 20px;
+}
+
+.card-badge {
+  align-self: flex-start;
+  background: var(--card-badge-background);
+  border: var(--card-badge-border);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--card-badge-color);
+  text-transform: uppercase;
+  margin-bottom: auto;
+  margin-top: 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--card-title-color);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.card-rating-wrapper {
+  transform: scale(0.75);
+  transform-origin: left top;
+  margin-top: -10px;
+}
+
+@media (max-width: 455px) {
+  .entry-card {
+    width: 255px;
+    height: 185px;
+  }
+}
+
+

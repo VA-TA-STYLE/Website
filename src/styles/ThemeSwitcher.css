@@ -1,0 +1,32 @@
+.switch-theme button {
+  font-size: 1.5rem;
+  font-weight: 400;
+  border: none;
+  background: transparent;
+  padding: 6px 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  color: var(--text);
+  transition: 0.3s ease-in-out;
+  border-right: var(--switch-theme-border-right);
+}
+
+@media (max-width: 768px) {
+  .switch-theme button {
+    padding: 6px 14px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    border-right: none;
+    border-left: var(--switch-theme-border-right);
+  }
+
+  .switch-theme button .theme-text {
+    display: none;
+  }
+  .switch-theme {
+    order: 2;
+  }
+}

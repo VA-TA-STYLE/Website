@@ -1,0 +1,34 @@
+.switch-language {
+  border: var(--switch-border);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+}
+
+.switch-language .active {
+  background-color: var(--switch-active-button);
+  border-radius: 10px;
+}
+
+.switch-language img {
+  width: 25px;
+  height: auto;
+  object-fit: cover;
+}
+
+.switch-language button {
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  background: transparent;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .switch-language button {
+    font-size: 1.2rem;
+  }
+
+}

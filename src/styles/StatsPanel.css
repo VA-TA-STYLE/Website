@@ -1,0 +1,99 @@
+.stats-panel {
+  background: var(--main-stats-panel-background);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: var(--main-stats-panel-border);
+  box-shadow: var(--main-stats-panel-box-shadow);
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-color: var(--stat-icons-background);
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+.movie-icon {
+  mask-image: url("/Movie-Icon.svg");
+  -webkit-mask-image: url("/Movie-Icon.svg");
+}
+.rating-icon {
+  mask-image: url("/Rating-Icon.svg");
+  -webkit-mask-image: url("/Rating-Icon.svg");
+}
+.series-icon {
+  mask-image: url("/Series-Icon.svg");
+  -webkit-mask-image: url("/Series-Icon.svg");
+}
+
+.stat-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1.3rem;
+  color: var(--stat-label-color);
+}
+
+.quote-stat {
+  margin-top: 10px;
+}
+
+.quote-text {
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--stat-label-color);
+  margin: 0;
+  max-width: 250px;
+}
+
+.quote-divider {
+  width: 24px;
+  height: 2px;
+  background-color: var(--stat-quote-divider-background);
+  border-radius: 2px;
+  margin-top: 15px;
+}
+
+.quote-icon {
+  mask-image: url("/Quote-Icon.svg");
+  -webkit-mask-image: url("/QuoteStat.svg");
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    display: block;
+  }
+  .stats-panel {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+}

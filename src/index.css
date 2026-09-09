@@ -1,0 +1,206 @@
+.preload * {
+  transition: none !important;
+}
+:root {
+  --background: linear-gradient(
+    to right,
+    #0d0d14 0%,
+    #17192b 30%,
+    #17192b 70%,
+    #0d0d14 100%
+  );
+  --text: white;
+
+  /* HEADER */
+  --header-background: #0d0d1417;
+  --header-box-shadow: 0px 0px 23px 12px #0000004d;
+  --collection-menu: #232633;
+  --collection-menu-box-shadow: 0 8px 20px #0000004d;
+  --collection-menu-hover: #333333;
+  --nav-a-hover: #6c5ce7;
+  --switch-border: 1px solid #555;
+  --switch-active-button: #6c5ce7;
+  --overlay-hamburger: #000000be;
+  --nav-mobile-background: #20202c;
+  --switch-theme-border-right: 2px solid #ffffff81;
+
+  /*  MAIN */
+  --main-explore-button-background: #6c5ce7;
+  --main-stats-panel-background: #1e202e4d;
+  --main-stats-panel-border: 3px solid #ffffff14;
+  --main-stats-panel-box-shadow: 0 10px 40px #00000066;
+  --stat-icons-background: #6c5ce7;
+  --stat-label-color: #ffffff99;
+  --stat-quote-divider-background: #6c5ce7;
+
+  --entry-card-shadows: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  --entry-card-border: 2px solid #ffffff26;
+  --entry-card-box-shadow: 0 4px 12px #0000004d;
+  --entry-card-border-color-hover: #ffffff53;
+  --card-overlay: linear-gradient(
+    to bottom right,
+    rgba(13, 13, 20, 0.95) 0%,
+    rgba(13, 13, 20, 0.7) 0%,
+    transparent 100%
+  );
+
+  --card-badge-background: #ffffff00;
+  --card-badge-border: 1px solid #ffffff8f;
+  --card-badge-color: #fefefffa;
+  --card-title-color: white;
+
+  /*  FOOTER */
+  --footer-border-top: 1px solid #ffffffa6;
+  --footer-border-top: 1px solid #ffffff;
+  --footer-links-icon-color: #6c5ce7;
+
+  /*  MOVIES & SERIES & GAMES */
+  --movies-sort-select-background: #1f2336;
+  --movies-sort-select-input-color: #ffffff;
+  --movies-sort-select-border: 1px solid #424b63;
+  --movies-sort-select-hover-border: #66708c;
+  --movies-sort-select-hover-background: #30384e;
+
+  --movie-card-background: #2e386380;
+  --movie-card-border: 2px solid #fc00000d;
+  --movie-card-box-shadow: 0 8px 20px #0000004d, 0 16px 40px #0000002e;
+  --movie-card-shadow-hover: 0 0 20px #46414180;
+  --movie-card-content-button: #6c5ce7;
+  --movie-meta: #607ea8;
+
+  --modal-overlay: #000000b6;
+  --modal-background: #2b3246;
+  --modal-box-shadow: 0 10px 30px #00000066, 0 20px 60px #0000004d;
+  --modal-close-border: 2px solid #ffffff14;
+  --modal-close-hover: #6c5ce7;
+  --modal-overlay-stars: #ffb300;
+  --modal-close-button: #6c5ce7; /* MOBILE */
+
+  --pagination-button: #2b3246;
+  --pagination-button-border: #3a4052;
+  --pagination-button-active: #6c5ce7;
+  --pagination-button-hover: #6c5ce7;
+
+  /* MY PROJECTS */
+  --project-button-hover: #6c5ce7;
+  --project-button-border: #555;
+  --project-image: 0.5;
+}
+
+[data-theme="light"] {
+  --background: linear-gradient(
+    to right,
+    #f0f6ff 0%,
+    #f0f6ff 30%,
+    #f0f6ff 70%,
+    #f0f6ff 100%
+  );
+  --text: #0f172a;
+
+  /* HEADER */
+  --header-background: #e6f0fa;
+  --header-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.05);
+  --collection-menu: #ffffff;
+  --collection-menu-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  --collection-menu-hover: #f1f5f9;
+  --nav-a-hover: #0041f3;
+  --switch-border: 1px solid #b8a294;
+  --switch-active-button: #0041f3;
+  --overlay-hamburger: rgba(15, 23, 42, 0.5);
+  --nav-mobile-background: #ffffff;
+  --switch-theme-border-right: 2px solid #00000081;
+
+  /* MAIN */
+  --main-explore-button-background: #3b82f6;
+  --main-stats-panel-background: #ffffff99;
+  --main-stats-panel-border: 3px solid #94a3b8;
+  --main-stats-panel-box-shadow: 0 10px 40px #0000000f;
+  --stat-icons-background: #3b82f6;
+  --stat-label-color: #64748b;
+  --stat-quote-divider-background: #3b82f6;
+
+  --entry-card-shadows: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+  --entry-card-border: 2px solid #94a3b8;
+  --entry-card-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  --entry-card-border-color-hover: #6c5ce766;
+  --card-overlay: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.2) 0%,
+    transparent 100%
+  );
+  --card-badge-background: #0000000a;
+  --card-badge-border: 1px solid #94a3b8;
+  --card-badge-color: white;
+  --card-title-color: white;
+
+  /* FOOTER */
+  --site-footer-background: #e6f0fa;
+  --footer-border-top: 2px solid #000000;
+  --footer-links-icon-color: #0041f3;
+
+  /* MOVIES & SERIES & GAMES */
+  --movies-sort-select-background: #ffffff;
+  --movies-sort-select-input-color: #1a1b26;
+  --movies-sort-select-border: 1px solid #94a3b8;
+  --movies-sort-select-hover-border: #94a3b8;
+  --movies-sort-select-hover-background: #f8fafc;
+
+  --movie-card-background: #e6f0fa;
+  --movie-card-border: 2px solid #94a3b8;
+  --movie-card-box-shadow: 0 8px 20px #0000000a, 0 16px 40px #00000005;
+  --movie-card-shadow-hover: 0 12px 24px #6c5ce71f;
+  --movie-card-content-button: #3b82f6;
+  --movie-meta: #374353;
+
+  --modal-overlay: #0f172a99;
+  --modal-background: #e6f0fa;
+  --modal-box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08), 0 20px 60px rgba(0, 0, 0, 0.06);
+  --modal-close-border: 2px solid #94a3b8;
+  --modal-close-hover: #ef4444;
+  --modal-overlay-stars: #ffb300;
+  --modal-close-button: #3b82f6; /* MOBILE */
+
+  --pagination-button: #ffffff;
+  --pagination-button-border: #94a3b8;
+  --pagination-button-active: #3b82f6;
+  --pagination-button-hover: #3b82f6;
+
+  /* MY PROJECTS */
+  --project-button-hover: #ffffff;
+  --project-button-border: #94a3b8;
+  --project-image: 1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  display: flow-root;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1400px;
+  margin: 25px auto;
+}

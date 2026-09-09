@@ -1,0 +1,35 @@
+.legal-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px 60px 20px;
+  line-height: 1.6;
+  color: inherit; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.legal-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.legal-date {
+  opacity: 0.6;
+  font-size: 0.95rem;
+  margin-bottom: 40px;
+}
+
+.legal-section {
+  margin-bottom: 30px;
+}
+
+.legal-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.legal-section p {
+  opacity: 0.85;
+  font-size: 1.2rem;
+}
