@@ -56,7 +56,7 @@ function App() {
 
         <Routes>
           <Route
-            path="/home"
+            path="/"
             element={<Main language={language} theme={theme} />}
           />
           <Route path="/movies" element={<Movies language={language} />} />

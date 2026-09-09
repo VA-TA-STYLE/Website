@@ -12,7 +12,7 @@
   --text: white;
 
   /* HEADER */
-  --header-background: #0d0d1417;
+  --header-background: #17192b;
   --header-box-shadow: 0px 0px 23px 12px #0000004d;
   --collection-menu: #232633;
   --collection-menu-box-shadow: 0 8px 20px #0000004d;
@@ -104,7 +104,7 @@
   --text: #0f172a;
 
   /* HEADER */
-  --header-background: #e6f0fa;
+  --header-background: #e6f0fabf;
   --header-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.05);
   --collection-menu: #ffffff;
   --collection-menu-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);

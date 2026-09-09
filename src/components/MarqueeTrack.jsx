@@ -23,7 +23,12 @@ export default function MarqueeTrack({ language }) {
             className="entry-card"
             key={index}
           >
-            <img src={item.image} alt={item.title} className="card-bg-image" />
+            <img
+              src={item.image}
+              alt={item.title}
+              className="card-bg-image"
+              fetchPriority={index < 8 ? "high" : "auto"}
+            />
             <div className="card-gradient-overlay"></div>
             <div className="card-content">
               <span className="card-badge">

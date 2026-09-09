@@ -1,15 +1,15 @@
-import TheWalkingDead from "../TV-images/TheWalkingDead.png";
-import GameOfThrones from "../TV-images/GameOfThrones.png";
-import Vikings from "../TV-images/Vikings.png";
-import TheSpartacus from "../TV-images/TheSpartacus.png";
-import TheBreakingBad from "../TV-images/TheBreakingBad.png";
-import Domina from "../TV-images/Domina.png";
-import SweetHome from "../TV-images/SweetHome.png";
-import MoneyHeist from "../TV-images/MoneyHeist.png";
-import BetterCallSaul from "../TV-images/BetterCallSaul.png";
-import TheWitcher from "../TV-images/TheWitcher.png";
-import VikingsValhalla from "../TV-images/VikingsValhalla.png"; // NOT READY //
-import TheRingsOfPower from "../TV-images/TheRingsOfPower.png"; // NOT READY //
+import TheWalkingDead from "../TV-images/TheWalkingDead.webp";
+import GameOfThrones from "../TV-images/GameOfThrones.webp";
+import Vikings from "../TV-images/Vikings.webp";
+import TheSpartacus from "../TV-images/TheSpartacus.webp";
+import TheBreakingBad from "../TV-images/TheBreakingBad.webp";
+import Domina from "../TV-images/Domina.webp";
+import SweetHome from "../TV-images/SweetHome.webp";
+import MoneyHeist from "../TV-images/MoneyHeist.webp";
+import BetterCallSaul from "../TV-images/BetterCallSaul.webp";
+import TheWitcher from "../TV-images/TheWitcher.webp";
+import VikingsValhalla from "../TV-images/VikingsValhalla.webp"; // NOT READY //
+import TheRingsOfPower from "../TV-images/TheRingsOfPower.webp"; // NOT READY //
 export const series = [
   {
     id: 1,

@@ -44,13 +44,13 @@ export default function Header({ language, setLanguage, theme, toggleTheme }) {
 
   return (
     <header className={isVisible ? "" : "header-hidden"}>
-      <NavLink to="/home" className="logo">
+      <NavLink to="/" className="logo">
         <span className="logo-subtext">VATaSTYLE</span>
       </NavLink>
 
       <nav className={isMenuOpen ? "nav-open" : ""}>
         <NavLink
-          to="/home"
+          to="/"
           end
           onClick={() => setIsMenuOpen(false)}
           className="nav-item"

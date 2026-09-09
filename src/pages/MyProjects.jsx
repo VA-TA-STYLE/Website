@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/MyProjects.css";
-import ProjectOnePhoto from "../assets/projects/ProjectOnePhoto.png";
-import ProjectOnePhotoLight from "../assets/projects/ProjectOnePhotoLight.png";
+import ProjectOnePhoto from "../assets/projects/ProjectOnePhoto.webp";
+import ProjectOnePhotoLight from "../assets/projects/ProjectOnePhotoLight.webp";
 const translations = {
   eng: {
     title: "My Website",
@@ -41,7 +41,7 @@ export default function MyProjects({ language, theme }) {
           </div>
         </div>
         <div className="project-buttons">
-          <a href="#">{t.viewButton} </a>
+          <a href="https://github.com/VA-TA-STYLE/Website">{t.viewButton} </a>
         </div>
       </div>
 

@@ -1,27 +1,27 @@
-import Warcraft from "../Movies-images/Warcraft.png";
-import Godfather from "../Movies-images/Godfather.png";
-import ShutterIsland from "../Movies-images/ShutterIsland.png";
-import LoTR from "../Movies-images/LoTR.png";
-import TheRaid from "../Movies-images/TheRaid.png";
-import Parasite from "../Movies-images/Parasite.png";
-import TheMatrix from "../Movies-images/TheMatrix.png";
-import HarryPotter from "../Movies-images/HarryPotter.png";
-import PiratesOfTheCaribbean from "../Movies-images/PiratesOfTheCaribbean.png";
-import SpiderMan from "../Movies-images/SpiderMan.png";
-import FightClub from "../Movies-images/FightClub.png";
-import FastAndFurious from "../Movies-images/FastAndFurious.png";
-import BulletTrain from "../Movies-images/BulletTrain.png";
-import Odyssey from "../Movies-images/Odyssey.png"; // NOT READY //
-import Troy from "../Movies-images/Troy.png"; // NOT READY //
-import ShawshenkRedemption from "../Movies-images/ShawshenkRedemption.png";
-import TheGladiator from "../Movies-images/TheGladiator.png"; // NOT READY //
-import LawAbidingCitizen from "../Movies-images/LawAbidingCitizen.png";
-import Snowpiercer from "../Movies-images/Snowpiercer.png";
-import CatchMeIfYouCan from "../Movies-images/CatchMeIfYouCan.png"; // NOT READY //
-import Backrooms from "../Movies-images/Backrooms.png";
-import FNAF from "../Movies-images/FNAF.png";
-import Alive from "../Movies-images/Alive.png";
-import RequemForDream from "../Movies-images/RequemForDream.png";
+import Warcraft from "../Movies-images/Warcraft.webp";
+import Godfather from "../Movies-images/Godfather.webp";
+import ShutterIsland from "../Movies-images/ShutterIsland.webp";
+import LoTR from "../Movies-images/LoTR.webp";
+import TheRaid from "../Movies-images/TheRaid.webp";
+import Parasite from "../Movies-images/Parasite.webp";
+import TheMatrix from "../Movies-images/TheMatrix.webp";
+import HarryPotter from "../Movies-images/HarryPotter.webp";
+import PiratesOfTheCaribbean from "../Movies-images/PiratesOfTheCaribbean.webp";
+import SpiderMan from "../Movies-images/SpiderMan.webp";
+import FightClub from "../Movies-images/FightClub.webp";
+import FastAndFurious from "../Movies-images/FastAndFurious.webp";
+import BulletTrain from "../Movies-images/BulletTrain.webp";
+import Odyssey from "../Movies-images/Odyssey.webp"; // NOT READY //
+import Troy from "../Movies-images/Troy.webp"; // NOT READY //
+import ShawshenkRedemption from "../Movies-images/ShawshenkRedemption.webp";
+import TheGladiator from "../Movies-images/TheGladiator.webp"; // NOT READY //
+import LawAbidingCitizen from "../Movies-images/LawAbidingCitizen.webp";
+import Snowpiercer from "../Movies-images/Snowpiercer.webp";
+import CatchMeIfYouCan from "../Movies-images/CatchMeIfYouCan.webp"; // NOT READY //
+import Backrooms from "../Movies-images/Backrooms.webp";
+import FNAF from "../Movies-images/FNAF.webp";
+import Alive from "../Movies-images/Alive.webp";
+import RequemForDream from "../Movies-images/RequemForDream.webp";
 
 export const movies = [
   {

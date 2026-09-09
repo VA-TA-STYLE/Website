@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import "../styles/Footer.css";
 
-
 const translations = {
   eng: {
     explore: "Explore",
@@ -14,7 +13,7 @@ const translations = {
     privacy: "Privacy Policy",
     terms: "Terms of Use",
     cookie: "Cookie Policy",
-    contact: "Contact Me"
+    contact: "Contact Me",
   },
   rus: {
     explore: "Разделы",
@@ -25,8 +24,15 @@ const translations = {
     privacy: "Политика конфиденциальности",
     terms: "Условия использования",
     cookie: "Политика Cookie",
-    contact: "Связаться"
+    contact: "Связаться",
   },
+};
+const handleEmailClick = (e) => {
+  e.preventDefault();
+  // Почтовый адрес собирается в момент клика, боты его не увидят в коде
+  const user = "enchante.mahauri";
+  const domain = "gmail.com";
+  window.location.href = `mailto:${user}@${domain}`;
 };
 export default function Footer({ language }) {
   const currentYear = new Date().getFullYear();
@@ -76,7 +82,7 @@ export default function Footer({ language }) {
             </svg>{" "}
             GitHub
           </a>
-          <a href="mailto:enchante.mahauri@gmail.com">
+          <a href="#" onClick={handleEmailClick}>
             <svg
               viewBox="0 0 24 24"
               fill="currentColor"

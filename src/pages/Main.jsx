@@ -1,7 +1,7 @@
 import "../styles/Main.css";
 import { Link } from "react-router-dom";
-import HeroBackground from "../assets/main/HeroBackground.png";
-import HeroBackgroundLight from "../assets/main/HeroBackgroundLight.png";
+import HeroBackground from "../assets/main/HeroBackground.webp";
+import HeroBackgroundLight from "../assets/main/HeroBackgroundLight.webp";
 import StatsPanel from "../components/StatsPanel";
 import MarqueeTrack from "../components/MarqueeTrack";
 import VisitorCounter from "../components/VisitorCounter";
