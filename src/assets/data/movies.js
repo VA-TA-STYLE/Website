@@ -366,7 +366,7 @@ export const movies = [
     title: "Odyssey",
     titleRu: "Одиссея",
     description:
-      "After the Trojan War, Odysseus begins a dangerous journey back to Ithaca. Along the way, he and his crew face mythical creatures, supernatural threats, and countless obstacles that test his strength, intelligence, and determination to return home.",
+      "After the Trojan War, Odysseus begins a dangerous journey back to Ithaca. Along the way, he and his crew face mythical creatures, supernatural threats, and countless obstacles that test his strength, intelligence, and determination to return home and reclaim his throne from suitors.",
     descriptionRu:
       "После Троянской войны Одиссей отправляется в опасное путешествие обратно на Итаку. По пути ему и его команде приходится столкнуться с мифическими существами, сверхъестественными угрозами и множеством испытаний, которые проверяют его силу, хитрость и желание вернуться домой.",
     year: "2026",
