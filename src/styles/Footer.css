@@ -123,11 +123,17 @@
   }
 }
 
-@media (min-width: 425px) and (max-width: 680px) {
+@media (min-width: 425px) and (max-width: 440px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 440px) and (max-width: 680px) {
   .footer-container {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-      
   }
 }
