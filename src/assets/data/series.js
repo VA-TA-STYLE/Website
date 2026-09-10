@@ -8,8 +8,8 @@ import SweetHome from "../tv-images/SweetHome.webp";
 import MoneyHeist from "../tv-images/MoneyHeist.webp";
 import BetterCallSaul from "../tv-images/BetterCallSaul.webp";
 import TheWitcher from "../tv-images/TheWitcher.webp";
-import VikingsValhalla from "../tv-images/VikingsValhalla.webp"; // NOT READY //
-import TheRingsOfPower from "../tv-images/TheRingsOfPower.webp"; // NOT READY //
+import VikingsValhalla from "../tv-images/VikingsValhalla.webp"; 
+import TheRingsOfPower from "../tv-images/TheRingsOfPower.webp"; 
 export const series = [
   {
     id: 1,
@@ -275,12 +275,15 @@ export const series = [
     duration: "43–69m",
     durationRu: "43–69м",
     image: VikingsValhalla,
-    rating: 0,
+    rating: 8,
     loading: "lazy",
-    thoughts: ".",
-    thoughtsRu: ".",
-    cons: ".",
-    consRu: ".",
+    thoughts:
+      "As I understand it, the series came out a few years ago, and originally I didn't even want to watch it. I thought it would be pretty average, considering that Netflix usually isn't great at making historical shows set in that era. But to my surprise, it turned out to be no worse than the original Vikings with Ragnar. It caught my interest right from the very first episodes. So far I've only watched the first season, and I hope the rest won't disappoint. I also really liked the battle for Kattegat in the final episode (for the umpteenth time, haha) - in my opinion, it was done quite well.",
+    thoughtsRu:
+      "Как я понял, сериал вышел уже несколько лет назад, и изначально я вообще не хотел его смотреть. Думал, что выйдет так себе, учитывая, что Netflix в основном не особо умеет снимать сериалы про ту эпоху. Но, к моему удивлению, вышло ничуть не хуже оригинальных «Викингов» с Рагнаром. Сериал заинтересовал меня прямо с первых же серий. Пока посмотрел только 1 сезон, надеюсь, дальше не разочарует. В последней серии была битва за Каттегат (уже какой раз по счету, ха-ха), и она мне понравилась - как по мне, эта битва сделана очень даже неплохо.",
+    cons: "I didn't like Freydis's storyline. The concept of her running from Christian radicals sounds interesting in theory, but it just didn't click for me, and I mostly skipped her scenes. Also, that moment in the season 1 finale where she kills Jarl Kåre in the great hall really annoyed me. It looked like certain death for her, but she somehow survives and wins anyway.",
+    consRu:
+      "Не понравилась сюжетная линия с Фрейдис. Вроде бы концепция того, что она бегает от христианских радикалов, звучит интересно, но мне что-то не зашло, и я в основном скипал моменты с ней. А ещё выбесил тот момент в последней серии первого сезона, где она убивает ярла Коре в главном зале. Хотя казалось, что всё, ее точно ждеть Вальхалла, но она всё равно каким-то чудом побеждает.",
   },
   {
     id: 12,
@@ -299,9 +302,13 @@ export const series = [
     image: TheRingsOfPower,
     rating: 7,
     loading: "lazy",
-    thoughts: ".",
-    thoughtsRu: ".",
-    cons: ".",
-    consRu: ".",
+    thoughts:
+      "I was really happy when Amazon took on the adaptation of this universe since I'm a huge fan. At first, I actually thought the show would cover the same events as the movies, but it turns out it's about the forging of the rings. I sat down to watch it, and I didn't really like it much. At the time, I wasn't familiar with these characters, so I decided to at least understand the lore first. When I started rewatching it after that, it got a little bit more interesting. But the second season I really loved, mainly because of Sauron. You could say he carried the whole second season on his back. It was fascinating to watch his cunning and how he deceived the smith. Also, the graphics are absolutely beautiful. Overall, I'm really looking forward to the third season and definitely plan to watch it to see how Sauron's story develops.",
+    thoughtsRu:
+      "Я был очень рад, когда Amazon взялась за экранизацию этой вселенной, так как являюсь фанатом. Я вообще вначале думал, что в сериале будут события из фильмов, но оказалось, что тут про создание колец. Сел смотреть - и мне не очень-то и понравилось. На тот момент я не был знаком с этими персонажами, потом решил сначала хотя бы понять лор и начал смотреть заново, тогда стало уже чуть-чуть интереснее. А вот 2 сезон мне сильно понравился из-за Саурона. Можно сказать, он вытащил весь второй сезон на себе - было очень интересно наблюдать за его хитростями и тем, как он обманывал кузнеца. Ну и графика тут просто невероятно красивая. Вообще, я теперь очень жду 3 сезон и планирую посмотреть его, чтобы узнать, как будет развиваться история Саурона.",
+   cons:
+      "There are plenty of downsides here. The show reportedly has a massive budget, but for some reason, it doesn't show on screen—there are no large-scale battles or epic clashes like in Peter Jackson's trilogy. The main heroine annoyed me with her stupid actions. And those awful hobbits are just so uninteresting and boring; I literally skipped all of their scenes except for the very beginning. Gandalf is weak and boring here, completely uninteresting to watch. And all of this is despite the fact that I actually like this setting and universe. An average viewer has absolutely nothing to do here. The first season is complete trash, but the second one is much more interesting and gave me hope that the continuation will be good. I hope it will be.",
+    consRu:
+      "Минусов тут предостаточно. Заявлено, что у сериала просто гигантский бюджет, но почему-то на экране он не отражается — нет никаких масштабных сражений и замесов, как в трилогии Питера Джексона. Бесила главная героиня своими тупыми действиями. А еще эти мерзкие хоббиты - они вообще неинтересные и скучные, я абсолютно все сцены с ними (не считая начальных) просто скипал. Гэндальф тут какой-то дохлый и скучный, за ним совершенно неинтересно наблюдать. И всё это несмотря на то, что мне нравится этот сеттинг и вселенная. Обычному зрителю тут вообще делать нечего. Первый сезон - полная туфта, но вот второй получился намного интереснее, и он дал мне надежду, что продолжение будет годным. Надеюсь, так оно и будет."
   },
 ];

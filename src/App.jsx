@@ -12,7 +12,7 @@ import Privacy from "./pages/legal/Privacy";
 import Terms from "./pages/legal/Terms";
 import Cookie from "./pages/legal/Cookie";
 import CookieBanner from "./components/CookieBanner";
-
+  
 const getDefaultLanguage = () => {
   const savedLanguage = localStorage.getItem("appLanguage");
   if (savedLanguage) {
