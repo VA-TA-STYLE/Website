@@ -11,7 +11,7 @@ import WaitingMovie from "../components/WaitingMovie.jsx";
 import SeriesBackground from "../assets/series/SeriesBackground.webp";
 import SeriesBackgroundLight from "../assets/series/SeriesBackgroundLight.webp";
 import MovieCarousel from "../components/MovieCarousel.jsx";
-import TheRingsOfPower from "../assets/images/waiting-images/TheRingsofPower.webp";
+import TheRingsOfPower from "../assets/images/waiting-images/TheRingsOfPower.webp";
 import TenThousandsShips from "../assets/images/waiting-images/TenThousandsShips.webp";
 import TheWitcher from "../assets/images/waiting-images/TheWitcher.webp";
 const translations = {
