@@ -1,8 +1,66 @@
 .movies-intro {
+  /* Обязательно добавляем relative, чтобы картинка привязалась к этому блоку */
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  max-width: 1400px;
+  margin: 50px auto;
+  isolation: isolate;
+}
+
+/* Твой найденный код, но слегка допиленный для фона */
+.movies-hero-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Центрируем */
+  width: 100vw; /* Растягиваем на весь экран */
+  height: 120%; /* Делаем чуть выше блока, чтобы градиент красиво таял */
+  z-index: -1; /* Прячем ПОД текст и карусель */
+  object-fit: cover;
+
+  /* Плавное растворение краев, которое ты нашел */
+  mask-image:
+    linear-gradient(
+      to right,
+      transparent 0%,
+      black 15%,
+      black 85%,
+      transparent 100%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 20%,
+      black 80%,
+      transparent 100%
+    );
+  mask-composite: intersect;
+  -webkit-mask-image:
+    linear-gradient(
+      to right,
+      transparent 0%,
+      black 15%,
+      black 85%,
+      transparent 100%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 20%,
+      black 80%,
+      transparent 100%
+    );
+  -webkit-mask-composite: source-in;
+
+  opacity: 0.6; /* Легкое затемнение всей картинки, чтобы текст лучше читался */
+}
+
+.movies-intro-text {
+  flex: 1;
   max-width: 600px;
-  margin: 70px auto 60px;
-  text-align: center;
-  color: var(--text);
 }
 .movies-label {
   margin-bottom: 12px;
@@ -18,21 +76,23 @@
   margin: 0;
   font-size: clamp(2rem, 3vw, 4rem);
   line-height: 1;
+  text-align: left;
 }
 
 .movies-description {
   max-width: 550px;
-  margin: 15px auto 0;
+  margin: 15px 0;
   font-size: 1.3rem;
   line-height: 1.5;
-  opacity: 0.7;
+  opacity: 1;
+  text-align: left;
+  font-weight: 500;
 }
 .movies-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-
 
 .pagination {
   display: flex;
@@ -75,6 +135,10 @@
 }
 
 @media (max-width: 1024px) {
+  .movies-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .movies-label {
     font-size: 1.2rem;
     font-weight: 700;
@@ -95,6 +159,10 @@
 }
 
 @media (max-width: 768px) {
+  .movies-intro {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .movies-grid {
     display: flex;
     flex-direction: row;
@@ -110,21 +178,36 @@
     display: none;
   }
 
+
   .movies-label {
     font-size: 1.1rem;
     font-weight: 700;
+    text-align: center;
+  }
+  .movies-intro h1  {
+    text-align: center;
   }
   .movies-description {
+    text-align: center;
     font-size: 1.1rem;
   }
 }
 
 @media (max-width: 425px) {
+  .movies-intro {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .movies-label {
+    text-align: center;
     font-size: 1rem;
     font-weight: 700;
   }
+  .movies-intro h1 {
+    text-align: center;
+  }
   .movies-description {
+    text-align: center;
     font-size: 1rem;
   }
 }

@@ -8,8 +8,8 @@ import VisitorCounter from "../components/VisitorCounter";
 const translations = {
   eng: {
     label: "Movie Journal by Vatastyle",
-    title: "Recent watch history",
-    title2: "with my personal verdict",
+    title: "Recent watch history with",
+    title2: "my personal verdict",
     description:
       "This is my personal journal of the things I watch, play, learn, make, and think about - the things I loved, hated, finished, abandoned, and couldn't stop thinking about",
     exploreBtn: "Explore Journal",
@@ -53,7 +53,9 @@ export default function Main({ language, theme }) {
           </div>
           <StatsPanel language={language} />
         </div>
-              <div><VisitorCounter language={language}></VisitorCounter></div>
+        <div>
+          <VisitorCounter language={language}></VisitorCounter>
+        </div>
       </section>
       <MarqueeTrack language={language} />
     </main>

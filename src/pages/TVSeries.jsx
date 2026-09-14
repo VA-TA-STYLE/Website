@@ -7,11 +7,18 @@ import ModalOverlay from "../components/ModalOverlay.jsx";
 import useModalFromLocation from "../components/hooks/useModalFromLocation";
 import MoviesFilter from "../components/MoviesFilter.jsx";
 import useIsMobile from "../components/hooks/useIsMobile.jsx";
+import WaitingMovie from "../components/WaitingMovie.jsx";
+import SeriesBackground from "../assets/series/SeriesBackground.webp";
+import SeriesBackgroundLight from "../assets/series/SeriesBackgroundLight.webp";
+import MovieCarousel from "../components/MovieCarousel.jsx";
+import TheRingsOfPower from "../assets/images/waiting-images/TheRingsofPower.webp";
+import TenTousandsShips from "../assets/images/waiting-images/TenTousandsShips.webp";
+import TheWitcher from "../assets/images/waiting-images/TheWitcher.webp";
 const translations = {
   eng: {
     label: "My series journal",
-    title: "Series I watched",
-    title2: "and actually remember.",
+    title: "A personal archive of the TV shows, that",
+    title2: "pulled me in and never let go.",
     description:
       "TV shows I've followed, binged, dropped, and come back to. A collection of stories, characters and worlds that kept me coming back for another episode.",
     sort: "Sort:",
@@ -30,10 +37,10 @@ const translations = {
 
   rus: {
     label: "Мой сериал-журнал",
-    title: "Сериалы, которые я посмотрел",
-    title2: "и запомнил.",
+    title: "Личный архив сериалов, которые",
+    title2: "затянули меня и больше не отпустили.",
     description:
-      "Сериалы, за которыми я следил, смотрел запоем, бросал и к которым возвращался. Коллекция историй, персонажей и миров, которые заставляли меня включать следующую серию.",
+      "Сериалы, которые я смотрел запоем, бросал и к которым возвращался вновь. Коллекция историй, персонажей и миров, ради которых хотелось включить еще одну серию.",
     sort: "Сортировать:",
     emptyTitle: "Упс, ничего не найдено",
     emptyText: "Попробуйте изменить параметры поиска или фильтры.",
@@ -48,7 +55,27 @@ const translations = {
     close: "Закрыть",
   },
 };
-export default function TVSeries({ language }) {
+const upcomingSeries = [
+  {
+    id: 1,
+    title: { eng: "The Rings of Power", rus: "Кольца Власти" },
+    img: TheRingsOfPower,
+    releaseDate: "2026-11-11T00:00:00",
+  },
+  {
+    id: 2,
+    title: { eng: "10 000 Ships", rus: "!0 000 Кораблей" },
+    img: TenTousandsShips,
+    releaseDate: "2028-11-01T00:00:00",
+  },
+  {
+    id: 3,
+    title: { eng: "The Witcher", rus: "Ведьмак" },
+    img: TheWitcher,
+    releaseDate: "2027-10-01T00:00:00",
+  },
+];
+export default function TVSeries({ language, timeLeft, theme }) {
   const t = translations[language] || translations.eng;
   const [selectedSeries, setSelectedSeries] = useState(null);
   useModalFromLocation(series, setSelectedSeries);
@@ -113,13 +140,25 @@ export default function TVSeries({ language }) {
   return (
     <main className="series-page">
       <section className="movies-intro">
-        <p className="movies-label"> {t.label}</p>
-        <h1>
-          {t.title}
-          <br />
-          {t.title2}
-        </h1>
-        <p className="movies-description">{t.description}</p>
+        <img
+          src={theme === "dark" ? SeriesBackground : SeriesBackgroundLight}
+          className="movies-hero-image"
+          alt="bg"
+        />
+        <div className="movies-intro-text">
+          <p className="movies-label">{t.label}</p>
+          <h1>
+            {t.title}
+            <br />
+            {t.title2}
+          </h1>
+          <p className="movies-description">{t.description}</p>
+        </div>
+        <MovieCarousel
+          items={upcomingSeries}
+          language={language}
+          timeLeft={timeLeft}
+        />
       </section>
       <div ref={seriesTopRef}>
         <MoviesFilter
@@ -141,7 +180,7 @@ export default function TVSeries({ language }) {
       {currentSeries.length > 0 && (
         <div className="movies-grid" ref={gridRef}>
           {currentSeries.map((serie, index) => (
-            <MovieCard 
+            <MovieCard
               key={serie.id}
               movie={serie}
               language={language}

@@ -1,0 +1,101 @@
+/* Сама карточка фильма (ваши стили стекла и блока) */
+.waiting-movie-card {
+  width: 100%;
+  background: var(--background);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Постер фильма */
+.waiting-movie-poster {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.waiting-movie-poster img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+/* Бейдж поверх картинки */
+.waiting-movie-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: var(--movies-carousel-badge-background);
+  color: white;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Блок с текстом и таймером под картинкой */
+.waiting-movie-info {
+  padding: 20px;
+}
+
+.waiting-movie-info h2 {
+  margin: 55px 0 15px 0;
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.waiting-movie-timer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-item strong {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.timer-item span {
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .waiting-movie-info {
+    padding: 15px;
+  }
+
+  .waiting-movie-info h2 {
+    font-size: 1.1rem;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 375px) {
+  .waiting-movie-info h2 {
+    font-size: 1rem;
+    margin: 5px 0px 10px 0px;
+  }
+
+}
+  @media (max-width: 350px) {
+    .waiting-movie-poster {
+      height: 170px;
+    }
+    .waiting-movie-info h2 {
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+  }

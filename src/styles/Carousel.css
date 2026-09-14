@@ -1,0 +1,147 @@
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 450px;
+  height: 420px;
+}
+
+.carousel-cards-container {
+  position: relative;
+  width: 350px;
+  height: 380px;
+}
+
+.carousel-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.carousel-card.active {
+  transform: translateX(0) scale(1);
+  z-index: 3;
+  opacity: 1;
+  pointer-events: auto;
+  border: var(--movies-carousel-border);
+  box-shadow: var(--movies-carousel-box-shadow);
+}
+
+.carousel-card.next {
+  transform: translateX(45px) scale(0.9);
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.carousel-card.next-next {
+  transform: translateX(85px) scale(0.8);
+  z-index: 1;
+  opacity: 0.3;
+}
+
+/* Скрытые карточки */
+.carousel-card.hidden {
+  transform: translateX(0) scale(0.8);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--movies-carousel-background-buttons);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  transition: 0.3s;
+}
+
+.prev-btn {
+  left: -25px;
+}
+
+.next-btn {
+  right: -25px;
+}
+.carousel-dots {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-dots .dot {
+  width: 30px;
+  height: 10px;
+  border-radius: 15px;
+  background: var(--movies-carousel-dots-background);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-dots .dot.active {
+  background: var(--movies-carousel-dot-active-background);
+  width: 30px;
+  border-radius: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .carousel-cards-container {
+    width: 400px;
+    height: 435px;
+  }
+
+  .carousel-btn {
+    display: none;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .carousel-wrapper {
+    height: 350px;
+    overflow: hidden;
+  }
+   .carousel-cards-container {
+    width: 80%;
+    height: 300px;
+  }
+
+  .carousel-dots {
+    bottom: 0;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .carousel-wrapper {
+    height: 250px;
+  }
+   .carousel-cards-container {
+    width: 80%;
+    height: 280px;
+  }
+   .carousel-dots {
+    bottom: 0;
+  }
+}

@@ -6,14 +6,21 @@ import ModalOverlay from "../components/ModalOverlay.jsx";
 import useModalFromLocation from "../components/hooks/useModalFromLocation";
 import MoviesFilter from "../components/MoviesFilter.jsx";
 import useIsMobile from "../components/hooks/useIsMobile.jsx";
+import WaitingMovie from "../components/WaitingMovie.jsx";
+import MovieCarousel from "../components/MovieCarousel.jsx";
+import MoviesBackground from "../assets/movies/MoviesBackground.webp";
+import MoviesBackgroundLight from "../assets/movies/MoviesBackgroundLight.webp";
+import DuneThree from "../assets/images/waiting-images/DuneThree.webp";
+import Odyssey from "../assets/images/waiting-images/Odyssey.webp";
+import AvengersDoomsday from "../assets/images/waiting-images/AvengersDoomsday.webp";
 import "../styles/Movies.css";
 const translations = {
   eng: {
     label: "MY MOVIE JOURNAL",
-    title: "Movies I watched",
-    title2: "and actually remember.",
+    title: "A list of movies I've watched and actually",
+    title2: "still remember vividly.",
     description:
-      "Films I've watched, loved, hated and everything in between. A small collection of movies that made me think, feel, or simply enjoy a good evening.",
+      "Explore my personal vault of film ratings, thoughts, and countdowns for upcoming releases. If a movie made me think deeply or just saved a boring Tuesday night, it earned a spot on this list.",
     sort: "Sort:",
     emptyTitle: "Oops, nothing found",
     emptyText: "Try changing your search parameters or filters.",
@@ -30,10 +37,10 @@ const translations = {
 
   rus: {
     label: "МОЙ КИНОЖУРНАЛ",
-    title: "Фильмы, которые я посмотрел ",
-    title2: "и  запомнил.",
+    title: "Список фильмов, которые я посмотрел",
+    title2: "и до сих пор отчетливо помню.",
     description:
-      "Фильмы, которые я смотрел, любил, ненавидел и всё, что между этим. Небольшая коллекция фильмов, которые заставили меня задуматься, что-то почувствовать или просто хорошо провести вечер.",
+      "Мой личный архив с оценками, впечатлениями и таймерами премьер. Если кино заставило задуматься или просто спасло скучный вечер - оно здесь.",
     sort: "Сортировать:",
     emptyTitle: "Упс, ничего не найдено",
     emptyText: "Попробуйте изменить параметры поиска или фильтры.",
@@ -48,7 +55,27 @@ const translations = {
     close: "Закрыть",
   },
 };
-export default function Movies({ language }) {
+const upcomingMovies = [
+  {
+    id: 1,
+    title: { eng: "Odyssey", rus: "Одиссея" },
+    img: Odyssey,
+    releaseDate: "2026-11-17T00:00:00",
+  },
+  {
+    id: 2,
+    title: { eng: "Dune: Part Three", rus: "Дюна: Часть третья" },
+    img: DuneThree,
+    releaseDate: "2026-12-18T00:00:00",
+  },
+  {
+    id: 3,
+    title: { eng: "Avengers: Doomsday", rus: "Мстители: Судный день" },
+    img: AvengersDoomsday,
+    releaseDate: "2026-12-18T00:00:00",
+  },
+];
+export default function Movies({ language, timeLeft, theme }) {
   const t = translations[language] || translations.eng;
   const [selectedMovie, setSelectedMovie] = useState(null);
   useModalFromLocation(movies, setSelectedMovie);
@@ -113,13 +140,25 @@ export default function Movies({ language }) {
   return (
     <main className="movies-page">
       <section className="movies-intro">
-        <p className="movies-label"> {t.label}</p>
-        <h1>
-          {t.title}
-          <br />
-          {t.title2}
-        </h1>
-        <p className="movies-description">{t.description}</p>
+        <img
+          src={theme === "dark" ? MoviesBackground : MoviesBackgroundLight}
+          className="movies-hero-image"
+          alt="bg"
+        />
+        <div className="movies-intro-text">
+          <p className="movies-label">{t.label}</p>
+          <h1>
+            {t.title}
+            <br />
+            {t.title2}
+          </h1>
+          <p className="movies-description">{t.description}</p>
+        </div>
+        <MovieCarousel
+          items={upcomingMovies}
+          language={language}
+          timeLeft={timeLeft}
+        />
       </section>
       <div ref={moviesTopRef}>
         <MoviesFilter

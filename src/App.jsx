@@ -59,8 +59,8 @@ function App() {
             path="/"
             element={<Main language={language} theme={theme} />}
           />
-          <Route path="/movies" element={<Movies language={language} />} />
-          <Route path="/TVSeries" element={<TVSeries language={language} />} />
+          <Route path="/movies" element={<Movies language={language} theme={theme} />} />
+          <Route path="/TVSeries" element={<TVSeries language={language}  theme={theme}/>} />
           <Route
             path="/MyProjects"
             element={<MyProjects language={language} theme={theme} />}
