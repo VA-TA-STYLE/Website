@@ -1,5 +1,4 @@
 .movies-intro {
-  /* Обязательно добавляем relative, чтобы картинка привязалась к этому блоку */
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -10,18 +9,15 @@
   isolation: isolate;
 }
 
-/* Твой найденный код, но слегка допиленный для фона */
+
 .movies-hero-image {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Центрируем */
-  width: 100vw; /* Растягиваем на весь экран */
-  height: 120%; /* Делаем чуть выше блока, чтобы градиент красиво таял */
-  z-index: -1; /* Прячем ПОД текст и карусель */
+  width: 100vw; 
+  z-index: -1; 
   object-fit: cover;
-
-  /* Плавное растворение краев, которое ты нашел */
   mask-image:
     linear-gradient(
       to right,
@@ -54,8 +50,7 @@
       transparent 100%
     );
   -webkit-mask-composite: source-in;
-
-  opacity: 0.6; /* Легкое затемнение всей картинки, чтобы текст лучше читался */
+  opacity: 0.7; 
 }
 
 .movies-intro-text {
