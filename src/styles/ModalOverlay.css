@@ -19,7 +19,7 @@
   max-width: 850px;
 }
 .modal-content {
-  max-height: 85vh;
+  max-height: 80vh;
   overflow-y: auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -96,7 +96,6 @@
 
 @media (max-width: 1024px) {
   .modal {
-    max-height: 80%;
     width: 70%;
   }
   .modal-header {
@@ -124,7 +123,6 @@
 @media (max-width: 960px) {
   .modal {
     width: 90%;
-    max-height: 80vh;
   }
 }
 
