@@ -51,8 +51,7 @@
   font-size: 1.3rem;
   font-weight: 500;
   margin-right: 10px;
-    backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .movies-sort select {
