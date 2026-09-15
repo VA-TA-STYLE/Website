@@ -224,7 +224,6 @@ nav a.active {
     box-sizing: border-box;
   }
 
-  /* Основной стиль для всех ссылок-плашек */
   .nav-item {
     display: flex;
     align-items: center;
@@ -240,14 +239,12 @@ nav a.active {
     transition: background-color 0.2s ease;
   }
 
-  /* Левая часть: иконка + текст строго в ряд */
+
   .nav-item-left {
     display: flex;
     align-items: center;
     gap: 12px;
   }
-
-  /* Уменьшенный и аккуратный размер иконок */
   .nav-icon {
     width: 18px;
     height: 18px;
@@ -306,8 +303,6 @@ nav a.active {
     text-align: center;
     font-size: 1rem;
     line-height: 1.1;
-  }
-  .logo span {
   }
 
   .hamburger {

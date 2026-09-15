@@ -61,6 +61,7 @@
   width: 28px;
   height: 28px;
   color: var(--footer-links-icon-color);
+  object-fit: contain;
 }
 
 .footer-links a {
@@ -114,13 +115,17 @@
   }
   .footer-links {
     font-size: 1rem;
-    align-items: center;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    margin: 0 auto;
+   
   }
   .footer-links a {
     font-size: 1rem;
     justify-content: center;
-  }
+  } 
 }
 
 @media (min-width: 425px) and (max-width: 440px) {

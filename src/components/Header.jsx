@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Switch from "./SwitchLanguage.jsx";
 import ThemeSwitcher from "./ThemeSwitcher.jsx";
+import { Hamburger } from "lucide-react";
 const translations = {
   eng: {
     home: "Home",
@@ -83,7 +84,6 @@ export default function Header({ language, setLanguage, theme, toggleTheme }) {
                 <div className="nav-icon tv-icon"></div>
                 <span>{t.tvSeries}</span>
               </div>
-              {/* <span className="nav-arrow">›</span> */}
             </NavLink>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function Header({ language, setLanguage, theme, toggleTheme }) {
         </NavLink>
       </nav>
       <div
-        className={`hamburger ${isMenuOpen ? "active" : ""}`}
+        className={isMenuOpen ? "hamburger active" : "hamburger"}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         <span></span>
