@@ -167,7 +167,7 @@
   }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 375px) {
   .rating-number {
     display: none;
   }
