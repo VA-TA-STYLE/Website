@@ -14,28 +14,24 @@
   background: var(--modal-background);
   border-radius: 16px;
   box-shadow: var(--modal-box-shadow);
-  width: 90%;
-  max-width: 700px;
+  width: 80%;
+  overflow: hidden;
+  max-width: 850px;
 }
 .modal-content {
-  max-height: 80vh;
+  max-height: 85vh;
   overflow-y: auto;
-  font-family: "Source Serif 4", serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
-  padding: 5px 20px;
+  padding: 15px 20px;
   font-size: 1.3rem;
   font-weight: 400;
 }
-.modal-content h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-align: center;
-  margin: 10px 10px;
-}
+
 .modal-close {
   position: absolute;
-  top: 12px;
-  right: 20px;
+  top: 20px;
+  right: 37px;
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -58,21 +54,21 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: var(--modal-header-border-bottom);
   padding-bottom: 15px;
   margin-bottom: 18px;
 }
 
 .review-poster {
-  width: 48px;
-  height: 48px;
+  width: 78px;
+  height: 78px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 35px;
   flex-shrink: 0;
-  filter: brightness(0.75);
 }
 .modal-content h2 {
-  font-size: 1.6rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
   font-weight: 700;
   text-align: left;
   margin: 10px 0 4px;
@@ -81,45 +77,44 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 2px;
 }
 .stars {
   color: var(--modal-overlay-stars);
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   letter-spacing: 2px;
   line-height: 1;
 }
 .rating-number {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--text);
 }
-.thoughts {
-  margin: 0;
-  font-size: 1.05rem;
-  line-height: 1.6;
+
+.movie-thoughts {
+  margin-bottom: 24px;
+  line-height: 1.5;
 }
+
 @media (max-width: 1024px) {
   .modal {
     max-height: 80%;
     width: 70%;
   }
-.modal-header {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-bottom: 15px;
-  margin-bottom: 18px;
-}
+  .modal-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 18px;
+  }
 
-.review-poster {
-  width: 48px;
-  height: 48px;
-  object-fit: cover;
-  border-radius: 50%;
-  flex-shrink: 0;
-  filter: brightness(0.75);
-}
+  .review-poster {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+    filter: brightness(0.75);
+  }
   .modal-content {
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -136,9 +131,9 @@
 @media (max-width: 768px) {
   .modal {
     width: 90%;
-    max-height: 80vh;
+    max-height: 85vh;
   }
-  
+
   .modal-content {
     padding: 10px 20px;
     font-size: 1.1rem;
@@ -146,7 +141,7 @@
 
   .modal-close-bottom {
     display: block;
-    width: 30%;
+    width: 40%;
     margin: 24px auto;
     padding: 12px;
     border: none;
@@ -163,5 +158,17 @@
     display: flex;
     flex-wrap: wrap;
     font-size: 1.2rem;
+  }
+  .modal-close {
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 374px) {
+  .rating-number {
+    display: none;
   }
 }

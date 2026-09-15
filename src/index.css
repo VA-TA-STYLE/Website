@@ -81,9 +81,10 @@
   --movie-meta: #607ea8;
 
   --modal-overlay: #000000b6;
-  --modal-background: #2b3246;
+  --modal-background: #0e1424;
   --modal-box-shadow: 0 10px 30px #00000066, 0 20px 60px #0000004d;
   --modal-close-border: 2px solid #ffffff14;
+  --modal-header-border-bottom: 1px solid #fffffffa;
   --modal-close-hover: #6c5ce7;
   --modal-overlay-stars: #ffb300;
   --modal-close-button: #6c5ce7; /* MOBILE */
@@ -181,8 +182,9 @@
   --modal-background: #e6f0fa;
   --modal-box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.08), 0 20px 60px rgba(0, 0, 0, 0.06);
+  --modal-header-border-bottom: 1px solid #0c0c0cfa;
   --modal-close-border: 2px solid #94a3b8;
-  --modal-close-hover: #ef4444;
+  --modal-close-hover: #3b82f6;
   --modal-overlay-stars: #ffb300;
   --modal-close-button: #3b82f6; /* MOBILE */
 
