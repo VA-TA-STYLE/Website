@@ -6,6 +6,7 @@
   width: 100%;
   max-width: 450px;
   height: 420px;
+  overflow: hidden
 }
 
 .carousel-cards-container {
@@ -46,7 +47,6 @@
   opacity: 0.3;
 }
 
-/* Скрытые карточки */
 .carousel-card.hidden {
   transform: translateX(0) scale(0.8);
   opacity: 0;
@@ -74,11 +74,11 @@
 }
 
 .prev-btn {
-  left: -25px;
+  left: 0px;
 }
 
 .next-btn {
-  right: -25px;
+  right: 0px;
 }
 .carousel-dots {
   position: absolute;
@@ -106,7 +106,7 @@
 
 @media (max-width: 768px) {
   .carousel-cards-container {
-    width: 400px;
+    width: 90%;
     height: 410px;
   }
 

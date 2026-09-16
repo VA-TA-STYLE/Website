@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import WaitingMovie from "./WaitingMovie.jsx"; // путь может быть "./WaitingMovie.jsx", если они в одной папке
+import WaitingMovie from "./WaitingMovie.jsx"; 
 import "../styles/Carousel.css";
 
-// Картинки и списки отсюда убрали! 
+
 
 export default function MovieCarousel({ language, timeLeft, items }) {
   const [touchStart, setTouchStart] = useState(null);

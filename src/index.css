@@ -61,6 +61,7 @@
   --footer-links-icon-color: #6c5ce7;
 
   /*  MOVIES & SERIES & GAMES */
+  --movies-carousel-background: #050b1698;
   --movies-carousel-badge-background: #5946f5e6;
   --movies-carousel-border: 1px solid #393080a1;
   --movies-carousel-box-shadow: 0 0 15px #5a46f549, 0 10px 30px #00000099;
@@ -73,8 +74,8 @@
   --movies-sort-select-hover-border: #66708c;
   --movies-sort-select-hover-background: #30384e;
 
-  --movie-card-background: #2e386380;
-  --movie-card-border: 2px solid #fc00000d;
+  --movie-card-background: #1922359f;
+  --movie-card-border: 2px solid #8b46460d;
   --movie-card-box-shadow: 0 8px 20px #0000004d, 0 16px 40px #0000002e;
   --movie-card-shadow-hover: 0 0 20px #46414180;
   --movie-card-content-button: #6c5ce7;
@@ -159,6 +160,7 @@
   --footer-links-icon-color: #0041f3;
 
   /* MOVIES & SERIES & GAMES */
+  --movies-carousel-background: #f0f6ff;
   --movies-carousel-badge-background: #3b82f6;
   --movies-carousel-border: 1px solid #7094c7;
   --movies-carousel-box-shadow: 0 0 5px #3b83f6, 0 10px 30px #ffffff;

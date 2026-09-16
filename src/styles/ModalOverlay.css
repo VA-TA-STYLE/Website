@@ -47,9 +47,6 @@
   color: white;
   transform: scale(1.05);
 }
-.modal-close-bottom {
-  display: none;
-}
 .modal-header {
   display: flex;
   align-items: center;
@@ -94,6 +91,9 @@
   line-height: 1.5;
 }
 
+.modal-close-bottom {
+  display: none;
+}
 @media (max-width: 1024px) {
   .modal {
     width: 70%;
