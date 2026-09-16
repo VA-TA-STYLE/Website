@@ -113,7 +113,7 @@
 .card-rating-wrapper {
   transform: scale(0.75);
   transform-origin: left top;
-  margin-top: -10px;
+  margin-top: 0px;
 }
 
 @media (max-width: 455px) {
