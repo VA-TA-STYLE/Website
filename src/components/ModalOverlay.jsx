@@ -29,7 +29,6 @@ export default function ModalOverlay({ movie, language, t, onClose }) {
       document.body.style.overflow = "auto";
     };
   }, []);
-  const js = 'hed'
   return (
     <div className="modal-overlay">
       <div className="modal" ref={modalContentRef}>

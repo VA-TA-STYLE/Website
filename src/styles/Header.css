@@ -14,11 +14,13 @@ header {
 }
 
 .logo {
-  font-family: Georgia, serif;
-  font-weight: 400;
+  font-family: cursive, sans-serif, Arial, Helvetica, sans-serif;
+  font-weight: 800;
   font-size: 1.3rem;
   letter-spacing: 2px;
-  color: var(--text);
+  background: var(--header-logo-background);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: none;
   justify-self: start;
 }

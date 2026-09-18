@@ -14,6 +14,7 @@
   /* HEADER */
   --header-background: transparent;
   --header-box-shadow: 0px 0px 23px 12px #0000004d;
+  --header-logo-background: linear-gradient(90deg, #ffffff, #60a5fa);
   --collection-menu: #232633;
   --collection-menu-box-shadow: 0 8px 20px #0000004d;
   --collection-menu-hover: #333333;
@@ -25,6 +26,7 @@
   --switch-theme-border-right: 2px solid #ffffff81;
 
   /*  MAIN */
+  --main-text-text-shadows: 0 4px 10px rgba(0, 0, 0, 0.8);
   --main-explore-button-background: #6c5ce7;
   --main-stats-panel-background: #1e202e4d;
   --main-stats-panel-border: 3px solid #ffffff14;
@@ -114,6 +116,7 @@
   /* HEADER */
   --header-background: #e6f0fa67;
   --header-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.05);
+  --header-logo-background: linear-gradient(90deg, #1a1a1a, #2563eb);
   --collection-menu: #ffffff;
   --collection-menu-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   --collection-menu-hover: #f1f5f9;
@@ -125,6 +128,8 @@
   --switch-theme-border-right: 2px solid #00000081;
 
   /* MAIN */
+  --main-text-text-shadows:
+    0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.8);
   --main-explore-button-background: #3b82f6;
   --main-stats-panel-background: #ffffff99;
   --main-stats-panel-border: 3px solid #94a3b8;
