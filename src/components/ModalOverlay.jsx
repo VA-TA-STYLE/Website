@@ -54,12 +54,12 @@ export default function ModalOverlay({ movie, language, t, onClose }) {
           </div>
           <div className="review-text">
             <p className="movie-thoughts">
-              {language === "eng" ? movie.thoughts : movie.thoughtsRu}
+              {movie.thoughts}
             </p>
 
             <p className="movie-cons">
               <strong>{language === "eng" ? "Cons: " : "Минусы: "}</strong>
-              {language === "eng" ? movie.cons : movie.consRu}
+              {movie.cons}
             </p>
           </div>
           <button className="modal-close-bottom" onClick={onClose}>

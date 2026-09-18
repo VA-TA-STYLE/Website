@@ -160,6 +160,7 @@ export default function Movies({ language, timeLeft, theme }) {
           timeLeft={timeLeft}
         />
       </section>
+
       <div ref={moviesTopRef}>
         <MoviesFilter
           searchQuery={searchQuery}
@@ -171,13 +172,13 @@ export default function Movies({ language, timeLeft, theme }) {
           t={t}
         />
       </div>
+
       {currentMovies.length === 0 && (
         <div className="empty-movies">
           <h2>{t.emptyTitle} </h2>
           <p>{t.emptyText}</p>
         </div>
       )}
-
       {currentMovies.length > 0 && (
         <div className="movies-grid" ref={gridRef}>
           {currentMovies.map((movie, index) => (
@@ -219,6 +220,7 @@ export default function Movies({ language, timeLeft, theme }) {
           </button>
         </div>
       )}
+
       {selectedMovie && (
         <ModalOverlay
           movie={selectedMovie}

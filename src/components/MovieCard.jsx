@@ -11,7 +11,7 @@ export default function MovieCard({
   const [isActive, setIsActive] = useState(false);
   const cardRef = useRef(null);
 
-  //  SWIPE FOR TABLETS, PHONES //
+  //  SCROLL FOR TABLETS, PHONES //
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -32,9 +32,10 @@ export default function MovieCard({
       }
     };
   }, []);
-
+  
   return (
-    <article ref={cardRef} className={`movie-card ${isActive ? "active" : ""}`}>
+    
+   <article ref={cardRef} className={`movie-card ${isActive ? "active" : ""}`}>
       <img src={movie.image} alt={movie.title} className="movie-card-image" />
       <span className="movie-card-counter">
         {carouselIndex} / {carouselTotal}

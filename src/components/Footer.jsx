@@ -29,7 +29,6 @@ const translations = {
 };
 const handleEmailClick = (e) => {
   e.preventDefault();
-  // Почтовый адрес собирается в момент клика, боты его не увидят в коде
   const user = "enchante.mahauri";
   const domain = "gmail.com";
   window.location.href = `mailto:${user}@${domain}`;

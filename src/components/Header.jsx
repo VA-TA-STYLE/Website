@@ -99,7 +99,7 @@ export default function Header({ language, setLanguage, theme, toggleTheme }) {
         </NavLink>
       </nav>
       <div
-        className={isMenuOpen ? "hamburger active" : "hamburger"}
+        className={`hamburger ${isMenuOpen ? "active" : ""}`}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         <span></span>

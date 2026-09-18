@@ -39,6 +39,7 @@ function App() {
   const toggleTheme = () => {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
+  
   useEffect(() => {
     document.body.classList.remove("preload");
   }, []);

@@ -11,6 +11,8 @@
   font-size: 2.2rem;
   margin-bottom: 10px;
   font-weight: 700;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .legal-date {
@@ -32,4 +34,35 @@
 .legal-section p {
   opacity: 0.85;
   font-size: 1.2rem;
+}
+
+@media (max-width: 425px) {
+  .legal-container h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.legal-date {
+  opacity: 0.6;
+  font-size: 0.75rem;
+  margin-bottom: 40px;
+}
+
+.legal-section {
+  margin-bottom: 30px;
+}
+
+.legal-section h2 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.legal-section p {
+  opacity: 0.85;
+  font-size: 1rem;
+}
 }
