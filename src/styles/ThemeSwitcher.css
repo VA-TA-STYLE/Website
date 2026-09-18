@@ -13,8 +13,8 @@
 
 @media (max-width: 768px) {
   .switch-theme button {
-    padding: 6px 14px;
-    margin-right: 5px;
+    padding: 6px 18px;
+    margin-right: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,5 +28,11 @@
   }
   .switch-theme {
     order: 2;
+  }
+}
+@media (max-width: 425px) {
+  .switch-theme button {
+    padding: 4px 12px;
+    margin-right: 0px;
   }
 }
