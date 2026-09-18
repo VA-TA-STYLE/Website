@@ -22,7 +22,8 @@ import Backrooms from "../images/movies-images/Backrooms.webp";
 import FNAF from "../images/movies-images/FNAF.webp";
 import Alive from "../images/movies-images/Alive.webp";
 import RequemForDream from "../images/movies-images/RequemForDream.webp";
-
+import LegendaryAssassin from "../images/movies-images/LegendaryAssassin.webp"; // NOT READY //
+ 
 export const movies = [
   {
     id: 1,
@@ -642,6 +643,32 @@ export const movies = [
       "I watched it relatively recently, and this movie really stuck with me. It shows the brutal and realistic consequences of addiction. And not just to heavy drugs, but also to diet pills, which literally drive the protagonist's mother insane just so she can fit into a red dress for a TV show. The movie feels incredibly oppressive with its dark atmosphere and fast-paced editing. And I have to mention the music—it's absolutely top-tier! The soundtrack gives you chills. The ending is an emotional knockout that leaves you sitting in stunned silence.",
     thoughtsRu:
       "Посмотрел относительно недавно, и этот фильм мне сильно запомнился. Здесь очень жестко и реалистично показаны последствия зависимости. Причем не только от тяжелых наркотиков, но и от таблеток для похудения, из-за которых мать главного героя буквально сходит с ума ради мечты попасть на ТВ. Ещё фильм сильно давит своей атмосферой и быстрым монтажом. Ну и отдельно хочу выделить музыку - она просто топ! Саундтрек пробирает до мурашек. Концовка это настоящий эмоциональный нокаут, после которого долго сидишь в оцепенении.",
+    cons: "None.",
+    consRu: "Отсутствуют.",
+  },
+  {
+    id: 25,
+    title: "Legendary Assassin",
+    titleRu: "Легендарный убийца",
+    description:
+      "A mysterious martial artist befriends a female police officer on a remote island, unaware that he is a deadly assassin being hunted by a ruthless syndicate after decapitating their crime boss.",
+    descriptionRu:
+      "Загадочный мастер боевых искусств заводит дружбу с девушкой-полицейским на отдаленном острове. Она не подозревает, что ее новый знакомый - смертоносный киллер, на которого открыл охоту безжалостный синдикат убитого им криминального босса.",
+    year: "2008",
+    genre: "Action",
+    genreRu: "Боевик",
+    imdb: 6.1,
+    rating: 0,
+    duration: "1h 29m",
+    durationRu: "1ч 29м",
+    image: LegendaryAssassin,
+    loading: "lazy",
+    review: "Review",
+    reviewRu: "Рецензия",
+    thoughts:
+      "I have an interesting story with this movie. I first watched it about 15 years ago and only remembered bits and pieces, including the final fight. I recently decided to rewatch it, but the problem was I completely forgot the title. I tried searching for it using AI, feeding it prompts and describing the scenes I remembered for almost 40 minutes, but had no luck. Then, a couple of months later, I made attempt number two and, voilà, I found it!",
+    thoughtsRu:
+      "С этим фильмом у меня связана интересная история. Где-то лет 15 назад я впервые его посмотрел и запомнил только урывками, включая финальную драку. Недавно решил, что стоит пересмотреть, но проблема была в том, что я напрочь забыл название. Решил поискать с помощью ИИ: давал ему промпты, описывал отрывки, которые помнил. Почти 40 минут пытался найти, но безрезультатно. И вот, спустя пару месяцев, я предпринял попытку номер два - и вуаля, нашел!",
     cons: "None.",
     consRu: "Отсутствуют.",
   },

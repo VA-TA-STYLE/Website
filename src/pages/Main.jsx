@@ -26,7 +26,7 @@ const translations = {
 };
 export default function Main({ language, theme }) {
   const t = translations[language] || translations.eng;
-
+  
   return (
     <main>
       <section className="hero-section">

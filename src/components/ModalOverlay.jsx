@@ -54,7 +54,7 @@ export default function ModalOverlay({ movie, language, t, onClose }) {
           </div>
           <div className="review-text">
             <p className="movie-thoughts">
-              {movie.thoughts}
+              {language === "eng" ? movie.thoughts : movie.thoughtsRu}
             </p>
 
             <p className="movie-cons">
