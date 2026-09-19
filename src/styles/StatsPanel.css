@@ -1,7 +1,7 @@
 .stats-panel {
   background: var(--main-stats-panel-background);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(11px);
+  backdrop-filter: blur(11px);
   border: var(--main-stats-panel-border);
   box-shadow: var(--main-stats-panel-box-shadow);
   border-radius: 15px;

@@ -26,7 +26,6 @@
   --switch-theme-border-right: 2px solid #ffffff81;
 
   /*  MAIN */
-  --main-text-text-shadows: 0 4px 10px rgba(0, 0, 0, 0.8);
   --main-explore-button-background: #6c5ce7;
   --main-stats-panel-background: #1e202e4d;
   --main-stats-panel-border: 3px solid #ffffff14;
@@ -128,8 +127,6 @@
   --switch-theme-border-right: 2px solid #00000081;
 
   /* MAIN */
-  --main-text-text-shadows:
-    0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.8);
   --main-explore-button-background: #3b82f6;
   --main-stats-panel-background: #ffffff99;
   --main-stats-panel-border: 3px solid #94a3b8;
