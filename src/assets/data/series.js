@@ -8,8 +8,10 @@ import SweetHome from "../images/tv-images/SweetHome.webp";
 import MoneyHeist from "../images/tv-images/MoneyHeist.webp";
 import BetterCallSaul from "../images/tv-images/BetterCallSaul.webp";
 import TheWitcher from "../images/tv-images/TheWitcher.webp";
-import VikingsValhalla from "../images/tv-images/VikingsValhalla.webp"; 
-import TheRingsOfPower from "../images/tv-images/TheRingsOfPower.webp"; 
+import VikingsValhalla from "../images/tv-images/VikingsValhalla.webp";
+import TheRingsOfPower from "../images/tv-images/TheRingsOfPower.webp";
+import Fargo from "../images/tv-images/Fargo.webp";
+
 export const series = [
   {
     id: 1,
@@ -306,9 +308,33 @@ export const series = [
       "I was really happy when Amazon took on the adaptation of this universe since I'm a huge fan. At first, I actually thought the show would cover the same events as the movies, but it turns out it's about the forging of the rings. I sat down to watch it, and I didn't really like it much. At the time, I wasn't familiar with these characters, so I decided to at least understand the lore first. When I started rewatching it after that, it got a little bit more interesting. But the second season I really loved, mainly because of Sauron. You could say he carried the whole second season on his back. It was fascinating to watch his cunning and how he deceived the smith. Also, the graphics are absolutely beautiful. Overall, I'm really looking forward to the third season and definitely plan to watch it to see how Sauron's story develops.",
     thoughtsRu:
       "Я был очень рад, когда Amazon взялась за экранизацию этой вселенной, так как являюсь фанатом. Я вообще вначале думал, что в сериале будут события из фильмов, но оказалось, что тут про создание колец. Сел смотреть - и мне не очень-то и понравилось. На тот момент я не был знаком с этими персонажами, потом решил сначала хотя бы понять лор и начал смотреть заново, тогда стало уже чуть-чуть интереснее. А вот 2 сезон мне сильно понравился из-за Саурона. Можно сказать, он вытащил весь второй сезон на себе - было очень интересно наблюдать за его хитростями и тем, как он обманывал кузнеца. Ну и графика тут просто невероятно красивая. Вообще, я теперь очень жду 3 сезон и планирую посмотреть его, чтобы узнать, как будет развиваться история Саурона.",
-   cons:
-      "There are plenty of downsides here. The show reportedly has a massive budget, but for some reason, it doesn't show on screen—there are no large-scale battles or epic clashes like in Peter Jackson's trilogy. The main heroine annoyed me with her stupid actions. And those awful hobbits are just so uninteresting and boring; I literally skipped all of their scenes except for the very beginning. Gandalf is weak and boring here, completely uninteresting to watch. And all of this is despite the fact that I actually like this setting and universe. An average viewer has absolutely nothing to do here. The first season is complete trash, but the second one is much more interesting and gave me hope that the continuation will be good. I hope it will be.",
+    cons: "There are plenty of downsides here. The show reportedly has a massive budget, but for some reason, it doesn't show on screen—there are no large-scale battles or epic clashes like in Peter Jackson's trilogy. The main heroine annoyed me with her stupid actions. And those awful hobbits are just so uninteresting and boring; I literally skipped all of their scenes except for the very beginning. Gandalf is weak and boring here, completely uninteresting to watch. And all of this is despite the fact that I actually like this setting and universe. An average viewer has absolutely nothing to do here. The first season is complete trash, but the second one is much more interesting and gave me hope that the continuation will be good. I hope it will be.",
     consRu:
-      "Минусов тут предостаточно. Заявлено, что у сериала просто гигантский бюджет, но почему-то на экране он не отражается — нет никаких масштабных сражений и замесов, как в трилогии Питера Джексона. Бесила главная героиня своими тупыми действиями. А еще эти мерзкие хоббиты - они вообще неинтересные и скучные, я абсолютно все сцены с ними (не считая начальных) просто скипал. Гэндальф тут какой-то дохлый и скучный, за ним совершенно неинтересно наблюдать. И всё это несмотря на то, что мне нравится этот сеттинг и вселенная. Обычному зрителю тут вообще делать нечего. Первый сезон - полная туфта, но вот второй получился намного интереснее, и он дал мне надежду, что продолжение будет годным. Надеюсь, так оно и будет."
+      "Минусов тут предостаточно. Заявлено, что у сериала просто гигантский бюджет, но почему-то на экране он не отражается — нет никаких масштабных сражений и замесов, как в трилогии Питера Джексона. Бесила главная героиня своими тупыми действиями. А еще эти мерзкие хоббиты - они вообще неинтересные и скучные, я абсолютно все сцены с ними (не считая начальных) просто скипал. Гэндальф тут какой-то дохлый и скучный, за ним совершенно неинтересно наблюдать. И всё это несмотря на то, что мне нравится этот сеттинг и вселенная. Обычному зрителю тут вообще делать нечего. Первый сезон - полная туфта, но вот второй получился намного интереснее, и он дал мне надежду, что продолжение будет годным. Надеюсь, так оно и будет.",
+  },
+  {
+    id: 13,
+    title: "Fargo",
+    titleRu: "Фарго",
+    description:
+      "An anthology series exploring various chronicles of deception, intrigue, and murder in and around frozen Minnesota. Yet all of these seemingly unrelated tales mysteriously lead back to Fargo, North Dakota.",
+    descriptionRu:
+      "Сериал-антология, рассказывающий различные истории лжи, интриг и убийств, происходящих в заснеженной Миннесоте. Однако все эти, казалось бы, не связанные между собой события таинственным образом ведут в Фарго, Северная Дакота.",
+    year: "2014",
+    genre: "Crime",
+    genreRu: "Криминал",
+    imdb: 8.9,
+    duration: "45–68m",
+    durationRu: "45–68м",
+    image: Fargo,
+    rating: 10,
+    loading: "lazy",
+    thoughts:
+      "I stumbled upon this series completely by accident, and I absolutely loved the first season. The way the villain and the main character randomly met in the hospital, and the villain just casually asks him, 'Do you want me to kill him for bullying you?' was so unexpected and brilliant. I really loved the villain he's so calm, cold, and emotionless, just wow. Lester is also a pretty great character. I also vividly remember the moment when the villain intimidates the police officer who pulled him over, telling him to just go home, and the cop actually gets scared and drives off. And then there's that crazy scene where a guy is tied to a chair with a shotgun taped to his hands, set up perfectly so the SWAT team would shoot him. As I understand it, there are other seasons with different characters, but I probably won't be watching them anytime soon.",
+    thoughtsRu:
+      "Я вообще случайно наткнулся на этот сериал, и мне очень сильно понравился 1 сезон. То, как злодей и главный герой случайно встретились в больнице, и тот просто предлагает ему: «Хочешь, я убью его за то, что он над тобой издевался?» - это было очень неожиданно и круто. Очень понравился злодей: такой спокойный, холодный, безэмоциональный - просто вау. Лестер тоже весьма неплох. Ещё сильно запомнился момент, когда злодей напугал полицейского, остановившего его машину, дав понять, чтобы тот ехал домой и коп реально испугался и уехал. Ну и сцена, где человека привязали к стулу, примотав к рукам дробовик скотчем, чтобы спецназ его застрелил, тоже мощная. Как я понял, там есть и другие сезоны с другими персонажами, но в ближайшее время я вряд ли буду их смотреть.",
+    cons: "I sometimes skipped the scenes with that police officer (the one who got scared of the villain). His storyline seemed interesting, but I just found it a bit boring. I still don't understand why the main character did what he did near the end of the show. It seemed like the villain had disappeared, the suspicions against Lester were dropped, he married another woman, and he could just start his life over. But then he runs into the villain surrounded by other people, and in the elevator, he starts acting incredibly stupid and stubborn, asking him unnecessary questions. By doing so, he blows the villain's cover, which results in the villain killing everyone in the elevator and starting a hunt for the hero. Why??? Why couldn't he just walk away quietly?",
+    consRu:
+      "Я иногда скипал сцены с тем полицейским (который испугался злодея). Вроде бы история у него интересная, но мне что-то было скучно. Был момент котоырй я не понял до сих пор, зачем герой сделал то, что сделал в конце сериала. Казалось бы, злодей исчез, подозрения с Лестера сняли, он женился на другой женщине и всё, начинай жизнь заново. Но в какой-то момент он встречает злодея в окружении других людей и уже в лифте начинает вести себя глупо и упрямо, задавая ему ненужные вопросы. Тем самым он портит ему прикрытие, в итоге тот всех в лифте убивает и начинает охоту на героя. Зачем??? Почему нельзя было просто молча уйти?",
   },
 ];

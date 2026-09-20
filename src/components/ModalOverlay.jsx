@@ -1,10 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import "../styles/ModalOverlay.css";
+
 export default function ModalOverlay({ movie, language, t, onClose }) {
   const modalContentRef = useRef(null);
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key === "Escape") onClose();
+      if (e.key === "Escape") {
+        return onClose();
+      }
     };
     const handleClickOutside = (e) => {
       if (
@@ -57,8 +60,8 @@ export default function ModalOverlay({ movie, language, t, onClose }) {
             </p>
 
             <p className="movie-cons">
-              <strong>{language === "eng" ? "Cons: " : "Минусы: "}</strong>
-               {language === "eng" ? movie.cons : movie.consRu}
+              <strong>{t.consTitle} </strong>
+              {language === "eng" ? movie.cons : movie.consRu}
             </p>
           </div>
           <button className="modal-close-bottom" onClick={onClose}>

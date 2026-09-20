@@ -8,6 +8,7 @@ import MoviesFilter from "../components/MoviesFilter.jsx";
 import useIsMobile from "../components/hooks/useIsMobile.jsx";
 import WaitingMovie from "../components/WaitingMovie.jsx";
 import MovieCarousel from "../components/MovieCarousel.jsx";
+import MovieCardPhones from "../components/MovieCardPhones.jsx";
 import MoviesBackground from "../assets/movies/MoviesBackground.webp";
 import MoviesBackgroundLight from "../assets/movies/MoviesBackgroundLight.webp";
 import DuneThree from "../assets/images/waiting-images/DuneThree.webp";
@@ -137,6 +138,19 @@ export default function Movies({ language, timeLeft, theme }) {
     ? sortedMovies
     : sortedMovies.slice(indexOfFirstMovie, indexOfLastMovie);
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 470);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 470);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <main className="movies-page">
       <section className="movies-intro">
@@ -181,17 +195,20 @@ export default function Movies({ language, timeLeft, theme }) {
       )}
       {currentMovies.length > 0 && (
         <div className="movies-grid" ref={gridRef}>
-          {currentMovies.map((movie, index) => (
-            <MovieCard
-              key={movie.id}
-              movie={movie}
-              language={language}
-              t={t}
-              onOpenModal={setSelectedMovie}
-              carouselIndex={index + 1}
-              carouselTotal={currentMovies.length}
-            />
-          ))}
+          {currentMovies.map((movie, index) => {
+            const Card = isMobile ? MovieCardPhones : MovieCard;
+            return (
+              <Card
+                key={movie.id}
+                movie={movie}
+                language={language}
+                t={t}
+                onOpenModal={setSelectedMovie}
+                carouselIndex={index + 1}
+                carouselTotal={currentMovies.length}
+              />
+            );
+          })}
         </div>
       )}
 

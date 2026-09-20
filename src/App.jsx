@@ -6,7 +6,7 @@ import Main from "./pages/Main";
 import Footer from "./components/Footer";
 import Movies from "./pages/Movies";
 import TVSeries from "./pages/TVSeries";
-import MyProjects from "./pages/MyProjects";
+import AboutMe from "./pages/AboutMe";
 import ScrollToTop from "./components/ScrollToTop";
 import Privacy from "./pages/legal/Privacy";
 import Terms from "./pages/legal/Terms";
@@ -63,8 +63,8 @@ function App() {
           <Route path="/movies" element={<Movies language={language} theme={theme} />} />
           <Route path="/TVSeries" element={<TVSeries language={language}  theme={theme}/>} />
           <Route
-            path="/MyProjects"
-            element={<MyProjects language={language} theme={theme} />}
+            path="/AboutMe"
+            element={<AboutMe language={language} theme={theme} />}
           />
           <Route path="/privacy" element={<Privacy language={language} />} />
           <Route path="/terms" element={<Terms language={language} />} />

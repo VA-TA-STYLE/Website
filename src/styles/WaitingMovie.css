@@ -80,6 +80,17 @@
   }
 }
 
+@media (max-width: 425px) {
+    .waiting-movie-info {
+    padding: 15px;
+  }
+
+  .waiting-movie-info h2 {
+    font-size: 1.1rem;
+    margin-top: 55px;
+  }
+}
+
 @media (max-width: 375px) {
   .waiting-movie-info h2 {
     font-size: 1rem;

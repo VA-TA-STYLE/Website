@@ -14,6 +14,7 @@
   position: relative;
   z-index: 2;
 }
+
 /* LEFT PANEL */
 .hero-left {
   max-width: 500px;
@@ -73,7 +74,7 @@
   mask-image:
     linear-gradient(
       to right,
-      transparent 0%,
+      transparent 10%,
       black 30%,
       black 70%,
       transparent 100%
@@ -98,7 +99,7 @@
       to bottom,
       transparent 0%,
       black 20%,
-      black 80%,
+      rgb(5, 5, 5) 80%,
       transparent 100%
     );
   -webkit-mask-composite: source-in;

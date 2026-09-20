@@ -1,0 +1,259 @@
+.about-section {
+  margin: 85px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+   /* LEFT SIDE */
+.about-container {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 700px;
+}
+
+.about-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(2rem, 3vw, 4rem);
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 1.3rem;
+  color: var(--text);
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 40px;
+  max-width: 90%;
+}
+
+.skills-subtitle {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  color: var(--text);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.skill-card {
+  background: var(--skill-card-background);
+  border: var(--skill-card-border);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skill-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.skill-info h2 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.skill-info p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--skill-info-paragraph-color);
+  line-height: 1.4;
+}
+
+.custom-icon svg {
+  background: transparent;
+  width: 50px;
+  height: auto;
+}
+
+.skill-progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-track {
+  flex: 1;
+  height: 6px;
+  background: var(--progress-track-background);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1.5s ease-in-out;
+}
+
+.progress-number {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  min-width: 35px;
+  text-align: right;
+}
+
+   /* RIGHT SIDE */
+.about-image-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: flex-end;
+}
+.terminal-title {
+  color: var(--text);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.terminal-card {
+  width: 100%;
+  max-width: 500px;
+  background-color: #1c1d25;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Шапка с точками */
+.terminal-header {
+  background-color: #2a2b36;
+  padding: 12px 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.mac-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.mac-btn.close {
+  background-color: #ff5f56;
+}
+.mac-btn.minimize {
+  background-color: #ffbd2e;
+}
+.mac-btn.expand {
+  background-color: #27c93f;
+}
+
+/* Тело терминала и линия */
+.terminal-body {
+  padding: 30px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Расстояние между командами */
+}
+
+/* Сама тонкая линия */
+.timeline-line {
+  position: absolute;
+  left: 34px; /* Центрируем линию по иконкам */
+  top: 40px;
+  bottom: 40px;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+/* Строка с командой */
+.log-entry {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  z-index: 2; /* Чтобы иконки были поверх линии */
+}
+
+/* Иконки в квадратиках */
+.log-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+}
+
+/* Цвета для разных иконок (настрой под себя) */
+.git-icon {
+  background-color: #4a5568;
+  color: #a0aec0;
+}
+.npm-icon {
+  background-color: #38a169;
+}
+.react-icon {
+  background-color: #2d3748;
+}
+.git-commit-icon {
+  background-color: #dd6b20;
+}
+.build-icon {
+  background-color: #e53e3e;
+}
+.deploy-icon {
+  background-color: transparent;
+}
+
+/* Тексты команд */
+.log-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.log-command {
+  color: #e2e8f0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.log-desc {
+  color: #718096;
+  font-size: 1.1rem;
+}
+
+/* Адаптивность для телефонов и планшетов */
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+}

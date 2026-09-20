@@ -14,7 +14,7 @@
   /* HEADER */
   --header-background: transparent;
   --header-box-shadow: 0px 0px 23px 12px #0000004d;
-  --header-logo-background: linear-gradient(90deg, #ffffff, #60a5fa);
+  --header-logo-background:  #fffefefd;
   --collection-menu: #232633;
   --collection-menu-box-shadow: 0 8px 20px #0000004d;
   --collection-menu-hover: #333333;
@@ -96,16 +96,17 @@
   --pagination-button-active: #6c5ce7;
   --pagination-button-hover: #6c5ce7;
 
-  /* MY PROJECTS */
-  --project-button-hover: #6c5ce7;
-  --project-button-border: #555;
-  --project-image: 0.5;
+  /* ABOUT ME */
+  --skill-card-background: #ffffff10;
+  --skill-card-border: 1px solid #ffffff1a;
+  --skill-info-paragraph-color: #a0b2c0fb;
+  --progress-track-background: #ffffff66;
 }
 
 [data-theme="light"] {
   --background: linear-gradient(
     to right,
-    #f0f6ff 0%,
+    #f0f6fff5 0%,
     #f0f6ff 30%,
     #f0f6ff 70%,
     #f0f6ff 100%
@@ -115,7 +116,7 @@
   /* HEADER */
   --header-background: #e6f0fa67;
   --header-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.05);
-  --header-logo-background: linear-gradient(90deg, #1a1a1a, #2563eb);
+  --header-logo-background:  #050505fd;
   --collection-menu: #ffffff;
   --collection-menu-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   --collection-menu-hover: #f1f5f9;
@@ -197,10 +198,11 @@
   --pagination-button-active: #3b82f6;
   --pagination-button-hover: #3b82f6;
 
-  /* MY PROJECTS */
-  --project-button-hover: #ffffff;
-  --project-button-border: #94a3b8;
-  --project-image: 1;
+  /* ABOUT ME */
+  --skill-card-background: #f8fafc;
+  --skill-card-border: 2px solid #e2e8f0;
+  --skill-info-paragraph-color: #475569;
+  --progress-track-background: #d2d8e0;
 }
 
 * {

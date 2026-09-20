@@ -6,7 +6,7 @@
   width: 100%;
   max-width: 450px;
   height: 420px;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .carousel-cards-container {
@@ -114,7 +114,21 @@
     display: none;
   }
 }
-
+@media (max-width: 480px) {
+    .carousel-cards-container {
+    width: 95%;
+    height: 95%;
+  }
+}
+@media (max-width: 425px) {
+  .carousel-cards-container {
+    width: 90%;
+    height: 90%;
+  }
+  .carousel-dots {
+    bottom: 0;
+  }
+}
 @media (max-width: 375px) {
   .carousel-wrapper {
     height: 350px;
