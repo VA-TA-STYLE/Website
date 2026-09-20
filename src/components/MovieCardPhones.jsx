@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from "react";
 // ДОБАВЛЕНЫ ФИГУРНЫЕ СКОБКИ { }
 export default function MovieCardPhones({
   movie,
+  serie,
   language,
   t,
   onOpenModal,

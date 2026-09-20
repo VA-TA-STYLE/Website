@@ -8,9 +8,10 @@ import useModalFromLocation from "../components/hooks/useModalFromLocation";
 import MoviesFilter from "../components/MoviesFilter.jsx";
 import useIsMobile from "../components/hooks/useIsMobile.jsx";
 import WaitingMovie from "../components/WaitingMovie.jsx";
+import MovieCarousel from "../components/MovieCarousel.jsx";
+import MovieCardPhones from "../components/MovieCardPhones.jsx";
 import SeriesBackground from "../assets/series/SeriesBackground.webp";
 import SeriesBackgroundLight from "../assets/series/SeriesBackgroundLight.webp";
-import MovieCarousel from "../components/MovieCarousel.jsx";
 import TheRingsOfPower from "../assets/images/waiting-images/TheRingsOfPower.webp";
 import TenThousandsShips from "../assets/images/waiting-images/TenThousandsShips.webp";
 import TheWitcher from "../assets/images/waiting-images/TheWitcher.webp";
@@ -150,7 +151,6 @@ export default function TVSeries({ language, timeLeft, theme }) {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
   return (
     <main className="series-page">
       <section className="movies-intro">
@@ -191,19 +191,19 @@ export default function TVSeries({ language, timeLeft, theme }) {
           <p>{t.emptyText}</p>
         </div>
       )}
-      {currentMovies.length > 0 && (
+      {currentSeries.length > 0 && (
         <div className="movies-grid" ref={gridRef}>
-          {currentMovies.map((movie, index) => {
+          {currentSeries.map((serie, index) => {
             const Card = isMobile ? MovieCardPhones : MovieCard;
             return (
               <Card
-                key={movie.id}
-                movie={movie}
+                key={serie.id}
+                movie={serie}
                 language={language}
                 t={t}
-                onOpenModal={setSelectedMovie}
+                onOpenModal={setSelectedSeries}
                 carouselIndex={index + 1}
-                carouselTotal={currentMovies.length}
+                carouselTotal={currentSeries.length}
               />
             );
           })}
