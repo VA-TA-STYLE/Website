@@ -137,6 +137,20 @@ export default function TVSeries({ language, timeLeft, theme }) {
     ? sortedSeries
     : sortedSeries.slice(indexOfFirstSerie, indexOfLastSerie);
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 470);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 470);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <main className="series-page">
       <section className="movies-intro">
@@ -177,19 +191,22 @@ export default function TVSeries({ language, timeLeft, theme }) {
           <p>{t.emptyText}</p>
         </div>
       )}
-      {currentSeries.length > 0 && (
+      {currentMovies.length > 0 && (
         <div className="movies-grid" ref={gridRef}>
-          {currentSeries.map((serie, index) => (
-            <MovieCard
-              key={serie.id}
-              movie={serie}
-              language={language}
-              t={t}
-              onOpenModal={setSelectedSeries}
-              carouselIndex={index + 1}
-              carouselTotal={currentSeries.length}
-            />
-          ))}
+          {currentMovies.map((movie, index) => {
+            const Card = isMobile ? MovieCardPhones : MovieCard;
+            return (
+              <Card
+                key={movie.id}
+                movie={movie}
+                language={language}
+                t={t}
+                onOpenModal={setSelectedMovie}
+                carouselIndex={index + 1}
+                carouselTotal={currentMovies.length}
+              />
+            );
+          })}
         </div>
       )}
       {!isMobileOrTablet && (
