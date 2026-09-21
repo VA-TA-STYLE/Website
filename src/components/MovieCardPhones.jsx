@@ -44,6 +44,7 @@ export default function MovieCardPhones({
       <div className="movie-poster-mobile">
         <img
           src={movie.image}
+          loading="lazy"
           alt={language === "eng" ? movie.title : movie.titleRu}
         />
         <div className="movie-gradient-mobile"></div>

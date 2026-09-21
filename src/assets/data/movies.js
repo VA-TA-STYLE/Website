@@ -41,7 +41,6 @@ export const movies = [
     durationRu: "2ч 3м",
     image: Warcraft,
     rating: 8,
-    loading: "lazy",
     thoughts:
       "As a huge fan of Warcraft III, I had been waiting for years for a movie adaptation of this incredible universe. When Warcraft finally came out in 2016, I was really excited to see it. Overall, I enjoyed the movie and would have loved to see a sequel. Unfortunately, the movie didn't make enough money to justify continuing the franchise, so the chances of a sequel became very low. It made around $439 million worldwide against a production budget of about $160 million, and the director later said that the planned sequels were unlikely to happen. It's a shame because I think Warcraft has a huge amount of potential for more movies.",
     thoughtsRu:
@@ -66,7 +65,6 @@ export const movies = [
     durationRu: "2ч 55м",
     image: Godfather,
     rating: 10,
-    loading: "lazy",
     thoughts:
       "I watched The Godfather relatively recently, and even though the movie is quite old, it still holds up really well today. The way Michael avenged his brother and father was incredibly powerful. I especially remember Michael's quote when he confronted Carlo: Only don't tell me you're innocent. Because it insults my intelligence and makes me very angry. I also remember the moment when Michael said, Do you think I would make my sister a widow? and then killed the traitor anyway. That scene was cold and memorable. I watched the second movie as well. It was pretty good overall, but I haven't gotten around to watching the third one yet.",
     thoughtsRu:
@@ -90,7 +88,6 @@ export const movies = [
     durationRu: "2ч 18м",
     image: ShutterIsland,
     rating: 7,
-    loading: "lazy",
     thoughts:
       "Leonardo DiCaprio is one of my favorite actors, so it’s no surprise that I really enjoyed this movie as well. I liked the way he investigated the disappearance of the patient, and the whole movie kept me feeling tense and curious about what was really going on. My favorite quote from the ending is: “Which would be worse: to live as a monster, or to die as a good man?” I still don't fully understand the ending. Did he actually realize the truth and deliberately choose to be lobotomized, or did he genuinely lose himself in his delusions again? That ambiguity is what makes the ending so interesting. It still feels like a mystery to me.",
     thoughtsRu:
@@ -115,7 +112,6 @@ export const movies = [
     durationRu: "2ч 58м",
     image: LoTR,
     rating: 10,
-    loading: "lazy",
     thoughts:
       "One of my favorite trilogies. I love movies with epic battles and large-scale fights. The orcs, humans, and elves were great. I also really liked the characters and their personalities. Sauron is an interesting and powerful villain. I also really liked Gollum, especially the way he manipulated the naive Frodo. Even though Sam warned Frodo many times that Gollum couldn't be trusted, Frodo still believed him, which made their journey even more interesting. Movies like this are the kind of films I could rewatch every year.",
     thoughtsRu:
@@ -140,7 +136,6 @@ export const movies = [
     durationRu: "1ч 46м",
     image: TheRaid,
     rating: 9,
-    loading: "lazy",
     thoughts:
       "I still remember watching this movie around 2012–2013 when I was about 10 years old. I really loved it back then, and when I rewatched it years later, I had pretty much the same impression. I was surprised when I found out that the movie is actually Indonesian and not American, like most action movies I had seen. The action and fight scenes are incredibly well done. One of the moments that stuck with me the most was the final fight, when two brothers fought against one man. That was probably the best moment in the entire movie. I also managed to watch the second one. It was pretty good too, but in my opinion, it doesn't quite live up to the first movie.",
     thoughtsRu:
@@ -165,7 +160,6 @@ export const movies = [
     durationRu: "2ч 12м",
     image: Parasite,
     rating: 9,
-    loading: "lazy",
     thoughts:
       "Out of all the Korean movies I've watched recently, this one stood out to me the most. The movie keeps you on edge until the very end. I was impressed by how one member of the poor family managed to get a job with the wealthy family and then cleverly manipulated the situation so that the other members of his family could get jobs there as well. The way they used tricks and manipulation to slowly become part of the wealthy family's life was really interesting to watch. The fact that there was another person secretly living in the basement was a huge surprise to me. I definitely didn't see that coming.",
     cons: "I didn't fully understand why the father decided to kill the wealthy man. I understand that he was angry because of the way the wealthy family looked down on p oor people, and maybe after everything that happened, he simply couldn't control himself anymore. But to me, it still felt like he decided to kill him too quickly. Maybe I missed something or misunderstood the scene, at least when I first watched it.",
@@ -190,7 +184,6 @@ export const movies = [
     duration: "2h 16m",
     durationRu: "2ч 16 мин",
     image: TheMatrix,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts:
@@ -217,7 +210,6 @@ export const movies = [
     duration: "2h 32m",
     durationRu: "2ч 32м",
     image: HarryPotter,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts:
@@ -244,7 +236,6 @@ export const movies = [
     duration: "2h 23m",
     durationRu: "2ч 23м",
     image: PiratesOfTheCaribbean,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts:
@@ -271,7 +262,6 @@ export const movies = [
     duration: "2h 1m",
     durationRu: "2ч 1м",
     image: SpiderMan,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts:
@@ -298,7 +288,6 @@ export const movies = [
     duration: "2h 19m",
     durationRu: "2ч 19м",
     image: FightClub,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts:
@@ -324,7 +313,6 @@ export const movies = [
     duration: "1h 46m",
     durationRu: "1ч 46м",
     image: FastAndFurious,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts:
@@ -351,7 +339,6 @@ export const movies = [
     duration: "2h 7m",
     durationRu: "2ч 7м",
     image: BulletTrain,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts:
@@ -378,7 +365,6 @@ export const movies = [
     duration: "2h 52m",
     durationRu: "2ч 52м",
     image: Odyssey,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts: "Haven't watched yet.",
@@ -402,7 +388,6 @@ export const movies = [
     duration: "2h 43m",
     durationRu: "2ч 43м",
     image: Troy,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts: "Haven't watched yet.",
@@ -426,7 +411,6 @@ export const movies = [
     duration: "2h 22m",
     durationRu: "2ч 22м",
     image: ShawshenkRedemption,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts:
@@ -453,7 +437,6 @@ export const movies = [
     duration: "2h 35m",
     durationRu: "2ч 35м",
     image: TheGladiator,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts: "Haven't watched yet.",
@@ -477,7 +460,6 @@ export const movies = [
     duration: "1h 49m",
     durationRu: "1ч 49м",
     image: LawAbidingCitizen,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts:
@@ -504,7 +486,6 @@ export const movies = [
     duration: "2h 6m",
     durationRu: "2ч 6м",
     image: Snowpiercer,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts:
@@ -531,7 +512,6 @@ export const movies = [
     duration: "2h 21m",
     durationRu: "2ч 21м",
     image: CatchMeIfYouCan,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts: "Haven't watched yet.",
@@ -555,7 +535,6 @@ export const movies = [
     duration: "1h 50m",
     durationRu: "1ч 50м",
     image: Backrooms,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts:
@@ -582,7 +561,6 @@ export const movies = [
     duration: "1h 49m",
     durationRu: "1ч 49м",
     image: FNAF,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts:
@@ -609,7 +587,6 @@ export const movies = [
     duration: "1h 38m",
     durationRu: "1ч 38м",
     image: Alive,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts:
@@ -636,7 +613,6 @@ export const movies = [
     duration: "1h 42m",
     durationRu: "1ч 42м",
     image: RequemForDream,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts:
@@ -662,7 +638,6 @@ export const movies = [
     duration: "1h 29m",
     durationRu: "1ч 29м",
     image: LegendaryAssassin,
-    loading: "lazy",
     review: "Review",
     reviewRu: "Рецензия",
     thoughts:

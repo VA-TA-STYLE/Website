@@ -206,6 +206,7 @@ export default function Movies({ language, timeLeft, theme }) {
                 onOpenModal={setSelectedMovie}
                 carouselIndex={index + 1}
                 carouselTotal={currentMovies.length}
+                index={index}
               />
             );
           })}

@@ -162,7 +162,7 @@
   --footer-border-top: 2px solid #000000;
   --footer-links-icon-color: #0041f3;
 
-  /* MOVIES & SERIES & GAMES */
+  /* MOVIES & SERIES */
   --movies-carousel-background: #f0f6ff;
   --movies-carousel-badge-background: #3b82f6;
   --movies-carousel-border: 1px solid #7094c7;
@@ -184,7 +184,7 @@
   --movie-meta: #374353;
 
   --modal-overlay: #0f172a99;
-  --modal-background: #e6f0fa;
+  --modal-background: #faf5e6;
   --modal-box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.08), 0 20px 60px rgba(0, 0, 0, 0.06);
   --modal-header-border-bottom: 1px solid #0c0c0cfa;

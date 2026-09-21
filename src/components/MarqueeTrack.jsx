@@ -24,10 +24,11 @@ export default function MarqueeTrack({ language }) {
             key={index}
           >
             <img
+              loading={index < 6 ? "eager" : "lazy"}
+              fetchPriority={index < 6 ? "high" : "auto"}
               src={item.image}
               alt={item.title}
               className="card-bg-image"
-              fetchPriority={index < 8 ? "high" : "auto"}
             />
             <div className="card-gradient-overlay"></div>
             <div className="card-content">

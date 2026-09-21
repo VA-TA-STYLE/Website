@@ -29,7 +29,6 @@ export const series = [
     durationRu: "45м",
     image: TheWalkingDead,
     rating: 6,
-    loading: "lazy",
     thoughts:
       "The first time I saw this series was back in 2012, when I found a DVD of it. Considering how old I was at the time, I was obviously really impressed. The first few seasons of the show were absolutely fantastic. You could really feel the constant danger the characters were in. They could die from starvation, zombies, or simply from the dangers of the world around them. That atmosphere was one of the things I loved most about the show. And of course, there’s the charismatic villain Negan. I definitely didn’t expect him to kill Glenn with a baseball bat. That scene really shocked me. What really hooked me was Rick's story and his relationship with his partner. His death was pretty predictable, though. The biker was pretty good too.",
     thoughtsRu:
@@ -53,8 +52,7 @@ export const series = [
     duration: "49–82m",
     durationRu: "49-82м",
     image: GameOfThrones,
-    rating: 9,
-    loading: "lazy",
+    rating: 10,
     thoughts:
       "Game of Thrones is one of my favorite TV shows. I’ve watched it three times and I’ve even read the books. I really liked how the different families fought against each other. My favorite character is, of course, Tyrion, especially his scene during the trial, as well as the way he confronted Joffrey during the Small Council meeting - «You should speak to me more softly. Monsters are dangerous, and just now kings are dying like flies». Jon Snow is an interesting and brave character, but he is also very stupid. In Season 8, when Daenerys begged him not to tell anyone that he was a Targaryen, he decided to tell his sisters everything, proving once again that he was incredibly stupid and, to some extent, even a traitor to Daenerys. The story of Theon Greyjoy is absolutely gripping, especially the way Ramsay broke his will and turned him into his own 'pet. Littlefinger’s cunning schemes are pretty clever too. He’s really good at manipulating people and playing them against each other",
     thoughtsRu:
@@ -79,7 +77,6 @@ export const series = [
     durationRu: "45м",
     image: Vikings,
     rating: 7,
-    loading: "lazy",
     thoughts:
       "I’ve always liked TV shows set in ancient and medieval times, especially when they feature battles with swords, shields, and all that kind of stuff. I really enjoy that whole atmosphere of warriors, kingdoms, raids, and large-scale battles. At first, the series seemed pretty average to me, but gradually I started to like it more and more. I especially liked Ivar the Boneless and the way he managed to be so fearless and terrifying to his enemies despite being disabled. It was fascinating to see how he could strike fear into people and command an army even though he couldn’t walk.",
     thoughtsRu:
@@ -104,7 +101,6 @@ export const series = [
     durationRu: "1ч",
     image: TheSpartacus,
     rating: 9,
-    loading: "lazy",
     thoughts:
       "Spartacus has a lot of blood, gore, brutal fights, and killings, which is definitely impressive. I really liked how violent and brutal the battles were. After waiting for the right moment, he finally decided to turn against his vile dominus and kill him. One scene that really stuck with me was when Spartacus and his group of former slaves were trapped on a mountain and had to defend themselves against the Romans. Toward the end, I was really disappointed that his friend decided to march on Rome and took part of the army with him - forces that Spartacus desperately needed for the final battle against the Romans. I don't know, maybe that's actually what happened in real life, but it still bothered me. I really wish they had stayed together until the end. And maybe they could have won.",
     thoughtsRu:
@@ -129,7 +125,6 @@ export const series = [
     durationRu: "48м",
     image: TheBreakingBad,
     rating: 8,
-    loading: "lazy",
     thoughts:
       "I watched it about 12 years ago, and I really enjoyed it. What impressed me the most was seeing how Walter, who started out as a timid and ordinary coward, gradually turned into a monster, if you can call him that. In the beginning, when Hank showed him his gun, Walter held it very nervously and awkwardly. But later on, he became capable of killing people without any remorse or hesitation. Jesse sometimes annoyed me with his stupid decisions and reckless behavior, but it wasn't a major issue. Gustavo Fring is a great character too. I like how calm he always is, how cold and calculating he is, and how well he controls his emotions. It had a good ending without any forced or cheesy happy ending",
     thoughtsRu:
@@ -154,7 +149,6 @@ export const series = [
     durationRu: "1ч",
     image: Domina,
     rating: 7,
-    loading: "lazy",
     thoughts:
       "I watched Domina as well, but I don't remember it as clearly, so I probably won't be able to give as detailed a review of it. The main character Livia seems to be constantly trying to use manipulation and clever schemes to keep her husband from leaving her and taking another wife. I’ve always been interested in anything related to Ancient Rome, so naturally, I liked the series as well. I’ll probably rewatch it in a few years.",
     thoughtsRu:
@@ -178,7 +172,6 @@ export const series = [
     durationRu: "52м",
     image: SweetHome,
     rating: 6,
-    loading: "lazy",
     thoughts:
       "I randomly came across this series on the internet and thought, why not give it a try? I ended up really enjoying the first season. I especially liked how the characters in the beginning had no idea what was happening, but gradually began to understand what was going on. Watching them figure things out and try to survive inside the apartment building was really interesting. The whole atmosphere of being trapped inside while monsters were appearing outside made the first season really enjoyable for me. A while later, two more seasons were released, and I’m planning to watch them eventually. However, I have some doubts about continuing the series. The first season worked so well for me because of its atmosphere, the characters, and the whole feeling of being trapped inside the building. I’m a little worried that the later seasons might lose what made the first one so enjoyable. Still, I definitely want to give them a chance and see where the story goes. I also really liked the music at the end of each episode. It fit the atmosphere of the first season really well and became one of those little things I looked forward to after each episode.",
     thoughtsRu:
@@ -203,7 +196,6 @@ export const series = [
     durationRu: "42–60м",
     image: MoneyHeist,
     rating: 9,
-    loading: "lazy",
     thoughts:
       "I watched this series when it was already available on Netflix, and I ended up watching the first two parts in just two days. I really enjoyed them. All of the characters were charismatic, especially Berlin and the Professor. Arturo was pretty good too. In his own way, he was quite brave, even though he was also incredibly annoying at times. The ending of Part 2 was absolutely amazing, and honestly, I think the series could have ended right there. But then they released three more parts that, in my opinion, weren't really necessary. There wasn't anything particularly interesting for me in the later parts. The only characters from the later parts that I really liked were César Gandía, the governor's head of security, and the special forces soldiers who stormed the bank near the end. Gandía was a pretty interesting character because of how capable and dangerous he was, and I also enjoyed the military side of the final assault. The special forces felt much more serious and professional compared to some of the other antagonists in the later parts The Professor was still carrying the show with his charisma, and I also liked Berlin's friend Palermo, although he still doesn't come close to Berlin for me. Overall, I think the first two parts were by far the strongest.",
     thoughtsRu:
@@ -228,7 +220,6 @@ export const series = [
     durationRu: "43–69м",
     image: BetterCallSaul,
     rating: 7,
-    loading: "lazy",
     thoughts:
       "I first watched this series a long time ago, and back then I thought it was too boring and dragged out. Turns out I was wrong. After some time, I decided to give it another chance, and this time it left me with a really good impression. It might not reach the level of Breaking Bad for me, but it's still a great series about a lawyer. I especially enjoyed the conflict between Chuck and Jimmy. One scene that really stuck with me was the courtroom scene with the battery, when Jimmy managed to prove that Chuck's condition wasn't what everyone believed it was. I felt really sorry for Nacho Varga. He was working for Hector and the Salamancas, but he never seemed to be as ruthless as the people around him. He kept getting deeper and deeper into the criminal world while trying to protect his father. His whole storyline was one of the parts of the series that I found especially interesting. I'm currently on Season 6, where Lalo has been killed. I really liked his character because he was both charismatic and extremely dangerous. I also really enjoyed watching Jimmy's transformation throughout the series and seeing how he gradually became Saul Goodman. I also really liked the ending. Jimmy eventually decided to go to prison for everything he had done and confessed in court instead of taking the much lighter deal he had negotiated. He admitted how deeply involved he was with Walter White, saying that he was indispensable and that Walter couldn't have done it without him. By doing this, he accepted an 86-year prison sentence. In a way, I think this was Jimmy's form of redemption. He finally stopped running away from everything he had done and accepted responsibility for his actions.",
     thoughtsRu:
@@ -253,7 +244,6 @@ export const series = [
     durationRu: "43–69м",
     image: TheWitcher,
     rating: 5,
-    loading: "lazy",
     thoughts:
       "I first got into the Witcher universe through the games, and I've become a fan of it to some extent. So when Netflix announced a series based on the Witcher universe, I was really excited. When the show finally came out, I started watching it, but honestly, I barely understood what was going on. The only thing I really knew was who Geralt was. The first episodes confused me because it jumps between the future, the present, and the past without making it immediately clear when everything is happening. I think an average viewer could easily get confused and have no idea what is actually going on. Later, I read the Witcher books and decided to rewatch the series from the beginning. It made much more sense the second time around, and I was finally able to understand what was happening and how the different stories were connected. Later, the fourth season came out, which I didn't watch for a long time. Eventually, I decided to give it a chance and see what it was like, especially because I had heard about the final scene and was curious to see it for myself. That final scene with Leo fighting the Rats was absolutely mind-blowing. It was easily the best thing about the entire fourth season for me. The fight was incredibly well choreographed, and Leo Bonhart completely stole the scene. Even though he doesn't have that much screen time, he's such a charismatic and intimidating character. Sharlto Copley did an amazing job with him. Every time he appeared on screen, I immediately wanted to see more of him. If there is a fifth season, I'll definitely watch it, but at this point, the main reason I'll be watching is Bonhart. I really want to see more of him.",
     thoughtsRu:
@@ -278,7 +268,6 @@ export const series = [
     durationRu: "43–69м",
     image: VikingsValhalla,
     rating: 8,
-    loading: "lazy",
     thoughts:
       "As I understand it, the series came out a few years ago, and originally I didn't even want to watch it. I thought it would be pretty average, considering that Netflix usually isn't great at making historical shows set in that era. But to my surprise, it turned out to be no worse than the original Vikings with Ragnar. It caught my interest right from the very first episodes. So far I've only watched the first season, and I hope the rest won't disappoint. I also really liked the battle for Kattegat in the final episode (for the umpteenth time, haha) - in my opinion, it was done quite well.",
     thoughtsRu:
@@ -303,7 +292,6 @@ export const series = [
     durationRu: "65–72м",
     image: TheRingsOfPower,
     rating: 7,
-    loading: "lazy",
     thoughts:
       "I was really happy when Amazon took on the adaptation of this universe since I'm a huge fan. At first, I actually thought the show would cover the same events as the movies, but it turns out it's about the forging of the rings. I sat down to watch it, and I didn't really like it much. At the time, I wasn't familiar with these characters, so I decided to at least understand the lore first. When I started rewatching it after that, it got a little bit more interesting. But the second season I really loved, mainly because of Sauron. You could say he carried the whole second season on his back. It was fascinating to watch his cunning and how he deceived the smith. Also, the graphics are absolutely beautiful. Overall, I'm really looking forward to the third season and definitely plan to watch it to see how Sauron's story develops.",
     thoughtsRu:
@@ -328,7 +316,6 @@ export const series = [
     durationRu: "45–68м",
     image: Fargo,
     rating: 10,
-    loading: "lazy",
     thoughts:
       "I stumbled upon this series completely by accident, and I absolutely loved the first season. The way the villain and the main character randomly met in the hospital, and the villain just casually asks him, 'Do you want me to kill him for bullying you?' was so unexpected and brilliant. I really loved the villain he's so calm, cold, and emotionless, just wow. Lester is also a pretty great character. I also vividly remember the moment when the villain intimidates the police officer who pulled him over, telling him to just go home, and the cop actually gets scared and drives off. And then there's that crazy scene where a guy is tied to a chair with a shotgun taped to his hands, set up perfectly so the SWAT team would shoot him. As I understand it, there are other seasons with different characters, but I probably won't be watching them anytime soon.",
     thoughtsRu:

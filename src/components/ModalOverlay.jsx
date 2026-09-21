@@ -41,7 +41,12 @@ export default function ModalOverlay({ movie, language, t, onClose }) {
 
         <div className="modal-content">
           <div className="modal-header">
-            <img src={movie.image} alt="" className="review-poster" />
+            <img
+              src={movie.image}
+              alt="poster"
+              loading="lazy"
+              className="review-poster"
+            />
             <div>
               <h2>{t.review}</h2>
               <div className="my-rating">

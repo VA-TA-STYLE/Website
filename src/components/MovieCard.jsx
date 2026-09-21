@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import "../styles/MovieCard.css"
+import "../styles/MovieCard.css";
 export default function MovieCard({
   movie,
   language,
@@ -7,6 +7,7 @@ export default function MovieCard({
   onOpenModal,
   carouselIndex,
   carouselTotal,
+  index,
 }) {
   const [isActive, setIsActive] = useState(false);
   const cardRef = useRef(null);
@@ -32,11 +33,15 @@ export default function MovieCard({
       }
     };
   }, []);
-  
+
   return (
-    
-   <article ref={cardRef} className={`movie-card ${isActive ? "active" : ""}`}>
-      <img src={movie.image} alt={movie.title} className="movie-card-image" />
+    <article ref={cardRef} className={`movie-card ${isActive ? "active" : ""}`}>
+      <img
+        src={movie.image}
+        alt={movie.title}
+        loading={index < 6 ? "eager" : "lazy"}
+        className="movie-card-image"
+      />
       <span className="movie-card-counter">
         {carouselIndex} / {carouselTotal}
       </span>
