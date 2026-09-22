@@ -1,9 +1,5 @@
 import "../styles/Main.css";
 import { Link } from "react-router-dom";
-import HeroBackground from "../assets/main/HeroBackground.webp";
-import HeroBackgroundLight from "../assets/main/HeroBackgroundLight.webp";
-import HeroBackgroundMobile from "../assets/main/HeroBackgroundMobile.webp";
-import HeroBackgroundLightMobile from "../assets/main/HeroBackgroundLightMobile.webp";
 import StatsPanel from "../components/StatsPanel";
 import MarqueeTrack from "../components/MarqueeTrack";
 import VisitorCounter from "../components/VisitorCounter";
@@ -30,9 +26,11 @@ export default function Main({ language, theme }) {
   const t = translations[language] || translations.eng;
 
   const currentMobileBackground =
-    theme === "dark" ? HeroBackgroundMobile : HeroBackgroundLightMobile;
+    theme === "dark"
+      ? "/HeroBackgroundMobile.webp"
+      : "/HeroBackgroundLightMobile.webp";
   const currentDesktopBackground =
-    theme === "dark" ? HeroBackground : HeroBackgroundLight;
+    theme === "dark" ? "/HeroBackground.webp" : "/HeroBackgroundLight.webp";
   return (
     <main>
       <section className="hero-section">

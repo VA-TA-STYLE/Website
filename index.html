@@ -9,20 +9,6 @@
     />
     <link rel="icon" type="image/svg+xml" href="/Favicon-Icon.svg" />
     <link rel="preconnect" href="https://firestore.googleapis.com" />
-    <link
-      rel="preload"
-      as="image"
-      fetchpriority="high"
-      media="(max-width: 768px)"
-      href="/assets/HeroBackgroundMobile-xZ_38eHc.webp"
-    />
-    <link
-      rel="preload"
-      as="image"
-      fetchpriority="high"
-      media="(min-width: 769px)"
-      href="/assets/HeroBackground-tq6xs2D-.webp"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -61,6 +47,26 @@
         try {
           var theme = localStorage.getItem("theme") || "dark";
           document.documentElement.setAttribute("data-theme", theme);
+
+          var isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+          var preloadLink = document.createElement("link");
+          preloadLink.rel = "preload";
+          preloadLink.as = "image";
+          preloadLink.fetchPriority = "high"; 
+
+          if (isMobile) {
+            preloadLink.href =
+              theme === "dark"
+                ? "/HeroBackgroundMobile.webp"
+                : "/HeroBackgroundLightMobile.webp";
+          } else {
+            preloadLink.href =
+              theme === "dark"
+                ? "/HeroBackground.webp"
+                : "/HeroBackgroundLight.webp";
+          }
+          document.head.appendChild(preloadLink);
         } catch (e) {}
       })();
     </script>
