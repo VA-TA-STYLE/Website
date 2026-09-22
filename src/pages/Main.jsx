@@ -2,6 +2,8 @@ import "../styles/Main.css";
 import { Link } from "react-router-dom";
 import HeroBackground from "../assets/main/HeroBackground.webp";
 import HeroBackgroundLight from "../assets/main/HeroBackgroundLight.webp";
+import HeroBackgroundMobile from "../assets/main/HeroBackgroundMobile.webp";
+import HeroBackgroundLightMobile from "../assets/main/HeroBackgroundLightMobile.webp";
 import StatsPanel from "../components/StatsPanel";
 import MarqueeTrack from "../components/MarqueeTrack";
 import VisitorCounter from "../components/VisitorCounter";
@@ -26,7 +28,11 @@ const translations = {
 };
 export default function Main({ language, theme }) {
   const t = translations[language] || translations.eng;
-  
+
+  const currentMobileBackground =
+    theme === "dark" ? HeroBackgroundMobile : HeroBackgroundLightMobile;
+  const currentDesktopBackground =
+    theme === "dark" ? HeroBackground : HeroBackgroundLight;
   return (
     <main>
       <section className="hero-section">
@@ -45,11 +51,18 @@ export default function Main({ language, theme }) {
             </div>
           </div>
           <div className="hero-center">
-            <img
-              src={theme === "dark" ? HeroBackground : HeroBackgroundLight}
-              alt="Hero"
-              className="hero-image"
-            />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcSet={currentMobileBackground}
+              />
+              <img
+                src={currentDesktopBackground}
+                alt="Hero"
+                className="hero-image"
+                fetchPriority="high"
+              />
+            </picture>
           </div>
           <StatsPanel language={language} />
         </div>

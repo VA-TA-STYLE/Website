@@ -12,6 +12,8 @@ import MovieCarousel from "../components/MovieCarousel.jsx";
 import MovieCardPhones from "../components/MovieCardPhones.jsx";
 import SeriesBackground from "../assets/series/SeriesBackground.webp";
 import SeriesBackgroundLight from "../assets/series/SeriesBackgroundLight.webp";
+import SeriesBackgroundMobile from "../assets/series/SeriesBackgroundMobile.webp";
+import SeriesBackgroundLightMobile from "../assets/series/SeriesBackgroundLightMobile.webp";
 import TheRingsOfPower from "../assets/images/waiting-images/TheRingsOfPower.webp";
 import TenThousandsShips from "../assets/images/waiting-images/TenThousandsShips.webp";
 import TheWitcher from "../assets/images/waiting-images/TheWitcher.webp";
@@ -151,14 +153,23 @@ export default function TVSeries({ language, timeLeft, theme }) {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const currentMobileBackground =
+    theme === "dark" ? SeriesBackgroundMobile : SeriesBackgroundLightMobile;
+  const currentDesktopBackground =
+    theme === "dark" ? SeriesBackground : SeriesBackgroundLight;
   return (
     <main className="series-page">
       <section className="movies-intro">
-        <img
-          src={theme === "dark" ? SeriesBackground : SeriesBackgroundLight}
-          className="movies-hero-image"
-          alt="bg"
-        />
+        <picture className="movies-hero-picture">
+          <source media="(max-width: 768px)" srcSet={currentMobileBackground} />
+          <img
+            src={currentDesktopBackground}
+            className="movies-hero-image"
+            alt="bg"
+            fetchPriority="high"
+          />  
+        </picture>
         <div className="movies-intro-text">
           <p className="movies-label">{t.label}</p>
           <h1>

@@ -6,11 +6,12 @@ import ModalOverlay from "../components/ModalOverlay.jsx";
 import useModalFromLocation from "../components/hooks/useModalFromLocation";
 import MoviesFilter from "../components/MoviesFilter.jsx";
 import useIsMobile from "../components/hooks/useIsMobile.jsx";
-import WaitingMovie from "../components/WaitingMovie.jsx";
 import MovieCarousel from "../components/MovieCarousel.jsx";
 import MovieCardPhones from "../components/MovieCardPhones.jsx";
 import MoviesBackground from "../assets/movies/MoviesBackground.webp";
 import MoviesBackgroundLight from "../assets/movies/MoviesBackgroundLight.webp";
+import MoviesBackgroundMobile from "../assets/movies/MoviesBackgroundMobile.webp";
+import MoviesBackgroundLightMobile from "../assets/movies/MoviesBackgroundLightMobile.webp";
 import DuneThree from "../assets/images/waiting-images/DuneThree.webp";
 import Odyssey from "../assets/images/waiting-images/Odyssey.webp";
 import AvengersDoomsday from "../assets/images/waiting-images/AvengersDoomsday.webp";
@@ -151,14 +152,23 @@ export default function Movies({ language, timeLeft, theme }) {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const currentMobileBackground =
+    theme === "dark" ? MoviesBackgroundMobile : MoviesBackgroundLightMobile;
+  const currentDesktopBackground =
+    theme === "dark" ? MoviesBackground : MoviesBackgroundLight;
   return (
     <main className="movies-page">
       <section className="movies-intro">
-        <img
-          src={theme === "dark" ? MoviesBackground : MoviesBackgroundLight}
-          className="movies-hero-image"
-          alt="bg"
-        />
+        <picture className="movies-hero-picture">
+          <source media="(max-width: 768px)" srcSet={currentMobileBackground} />
+          <img
+            src={currentDesktopBackground}
+            className="movies-hero-image"
+            alt="bg"
+            fetchPriority="high"
+          />
+        </picture>
         <div className="movies-intro-text">
           <p className="movies-label">{t.label}</p>
           <h1>

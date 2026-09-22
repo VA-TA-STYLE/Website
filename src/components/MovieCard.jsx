@@ -39,7 +39,6 @@ export default function MovieCard({
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    ч;
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
