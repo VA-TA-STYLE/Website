@@ -8,14 +8,38 @@
       content="Movie Journal by Vatastyle. Моя личная история просмотров фильмов и сериалов с оценками и вердиктами."
     />
     <link rel="icon" type="image/svg+xml" href="/Favicon-Icon.svg" />
-    <link rel="preconnect" href="https://firestore.googleapis.com">
-    <link rel="preload" as="image" href="/assets/HeroBackgroundMobile-xZ_38eHc.webp">
+    <link rel="preconnect" href="https://firestore.googleapis.com" />
+    <link
+      rel="preload"
+      as="image"
+      fetchpriority="high"
+      media="(max-width: 768px)"
+      href="/assets/HeroBackgroundMobile-xZ_38eHc.webp"
+    />
+    <link
+      rel="preload"
+      as="image"
+      fetchpriority="high"
+      media="(min-width: 769px)"
+      href="/assets/HeroBackground-tq6xs2D-.webp"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="google-site-verification"
@@ -42,8 +66,8 @@
     </script>
   </head>
   <body class="preload">
-   <script type="text/javascript">
-      setTimeout(function() {
+    <script type="text/javascript">
+      setTimeout(function () {
         (function (m, e, t, r, i, k, a) {
           m[i] =
             m[i] ||
@@ -80,7 +104,7 @@
           accurateTrackBounce: true,
           trackLinks: true,
         });
-      }, 2500); 
+      }, 2500);
     </script>
     <noscript>
       <div>
