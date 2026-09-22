@@ -1,0 +1,7 @@
+# VATASTYLE Movie Journal
+
+This is a personal journal of watched movies and TV series, as well as countdown timers for upcoming releases.
+Visit our [Main Website](https://www.vatastyle.ru/).
+
+Это личный дневник просмотренных фильмов и сериалов, а также таймеры выхода новых картин.
+Посетите наш [Главный сайт](https://www.vatastyle.ru/).
