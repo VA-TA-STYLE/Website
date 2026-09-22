@@ -6,34 +6,47 @@ const translations = {
   eng: {
     visitors: "Visitors",
   },
-
   rus: {
     visitors: "Посетители",
   },
 };
+
 export default function VisitorCounter({ language }) {
   const [visitors, setVisitors] = useState(0);
   const t = translations[language] || translations.eng;
+
   useEffect(() => {
-    const trackVisitor = async () => {
-      const visitorRef = doc(db, "siteStats", "visitors");
-      const hasVisited = localStorage.getItem("hasVisited");
+    let isMounted = true; 
 
-      if (!hasVisited) {
-        await updateDoc(visitorRef, {
-          count: increment(1),
-        });
-        localStorage.setItem("hasVisited", "true");
-      }
+    const timerId = setTimeout(() => {
+      const trackVisitor = async () => {
+        try {
+          const visitorRef = doc(db, "siteStats", "visitors");
+          const hasVisited = localStorage.getItem("hasVisited");
 
-      const snapshot = await getDoc(visitorRef);
-      if (snapshot.exists()) {
-        setVisitors(snapshot.data().count);
-      }
+          if (!hasVisited) {
+            await updateDoc(visitorRef, {
+              count: increment(1),
+            });
+            localStorage.setItem("hasVisited", "true");
+          }
+
+          const snapshot = await getDoc(visitorRef);
+          if (snapshot.exists() && isMounted) {
+            setVisitors(snapshot.data().count);
+          }
+        } catch (error) {
+          console.error("Firebase error:", error);
+        }
+      };
+
+      trackVisitor();
+    }, 2000);
+    return () => {
+      isMounted = false;
+      clearTimeout(timerId); 
     };
-
-    trackVisitor();
-  }, []);
+  }, []); 
 
   return (
     <div style={styles.text}>
@@ -49,6 +62,5 @@ const styles = {
     opacity: '1',
     color: 'var(--text)',
     fontWeight: "bold",
-
   },
 };
