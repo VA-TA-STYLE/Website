@@ -46,9 +46,9 @@ export default function MarqueeTrack({ language }) {
               <span className="card-badge">
                 {language === "eng" ? item.type : item.typeRu}
               </span>
-              <h3 className="card-title">
+              <h2 className="card-title">
                 {language === "eng" ? item.title : item.titleRu}
-              </h3>
+              </h2>
               <div className="card-rating-wrapper">
                 <StarRating rating={item.rating} />
               </div>
