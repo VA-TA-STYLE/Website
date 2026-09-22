@@ -34,12 +34,23 @@ export default function MovieCard({
     };
   }, []);
 
+  const [isMobile, setIsMobile] = useState(true);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    ч;
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <article ref={cardRef} className={`movie-card ${isActive ? "active" : ""}`}>
       <img
         src={movie.image}
         alt={movie.title}
-        loading={index < 6 ? "eager" : "lazy"}
+        loading={index < (isMobile ? 3 : 6) ? "eager" : "lazy"}
+        fetchPriority={index === 0 ? "high" : "auto"}
         className="movie-card-image"
       />
       <span className="movie-card-counter">
