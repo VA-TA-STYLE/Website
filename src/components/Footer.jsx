@@ -8,7 +8,7 @@ const translations = {
     explore: "Explore",
     movies: "Movies",
     tvShows: "TV Shows",
-    aboutMe: "Abouut Me",
+    aboutMe: "About Me",
     legal: "Legal",
     privacy: "Privacy Policy",
     terms: "Terms of Use",
