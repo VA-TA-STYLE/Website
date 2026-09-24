@@ -12,18 +12,6 @@ export default function MarqueeTrack({ language }) {
     ];
     return combined.sort(() => Math.random() - 0.5);
   }, []);
-
-  const [isMobile, setIsMobile] = useState(true);
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const eagerCardsCount = isMobile ? 2 : 6;
   return (
     <section className="main-movie-cards-wrapper">
       <div className="main-movie-cards-track">
@@ -35,7 +23,7 @@ export default function MarqueeTrack({ language }) {
             key={index}
           >
             <img
-              loading={index < eagerCardsCount ? "eager" : "lazy"}
+              loading="eager"
               fetchPriority={index === 0 ? "high" : "auto"}
               src={item.image}
               alt={item.title}

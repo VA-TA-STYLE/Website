@@ -139,7 +139,6 @@
   font-family: "Courier New", Courier, monospace;
 }
 
-/* Шапка с точками */
 .terminal-header {
   background-color: #2a2b36;
   padding: 12px 16px;
@@ -169,13 +168,13 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 25px; /* Расстояние между командами */
+  gap: 25px; 
 }
 
 /* Сама тонкая линия */
 .timeline-line {
   position: absolute;
-  left: 34px; /* Центрируем линию по иконкам */
+  left: 34px; 
   top: 40px;
   bottom: 40px;
   width: 2px;
@@ -243,7 +242,7 @@
   font-size: 1.1rem;
 }
 
-/* Адаптивность для телефонов и планшетов */
+
 @media (max-width: 992px) {
   .about-container {
     flex-direction: column;
@@ -257,3 +256,55 @@
     font-size: 2.5rem;
   }
 }
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+.about-description  {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.skills-subtitle {
+  font-size: 0.9rem;
+}
+.terminal-title {
+  font-size: 1.4rem;
+}
+}
+
+@media (max-width: 425px) {
+  .about-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+.about-description  {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.skills-subtitle {
+  font-size: 0.8rem;
+}
+.terminal-title {
+  font-size: 1.3rem;
+}
+}
+@media (max-width: 375px) {
+  .about-title {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+.about-description  {
+  font-size: 1rem;
+  text-align: center;
+}
+.skills-subtitle {
+  font-size: 0.8rem;
+}
+.terminal-title {
+  font-size: 1.2rem;
+}
+}
+
+
