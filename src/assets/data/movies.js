@@ -634,7 +634,7 @@ export const movies = [
     genre: "Action",
     genreRu: "Боевик",
     imdb: 6.1,
-    rating: 0,
+    rating: 5,
     duration: "1h 29m",
     durationRu: "1ч 29м",
     image: LegendaryAssassin,
@@ -657,21 +657,20 @@ export const movies = [
     descriptionRu:
       "Некомпетентный, но полный благих намерений детектив полиции Фрэнк Дребин пытается сорвать заговор с целью покушения на королеву Елизавету II во время ее визита в Лос-Анджелес, сея вокруг себя уморительный хаос.",
     year: "1988",
-    genre: "Comedy, Crime",
-    genreRu: "Комедия, Криминал",
+    genre: "Comedy",
+    genreRu: "Комедия",
     imdb: 7.6,
-    rating: 0,
+    rating: 10,
     duration: "1h 25m",
     durationRu: "1ч 25м",
     image: NakedGun,
     review: "Review",
     reviewRu: "Рецензия",
     thoughts:
-      "I have an interesting story with this movie. I first watched it about 15 years ago and only remembered bits and pieces, including the final fight. I recently decided to rewatch it, but the problem was I completely forgot the title. I tried searching for it using AI, feeding it prompts and describing the scenes I remembered for almost 40 minutes, but had no luck. Then, a couple of months later, I made attempt number two and, voilà, I found it!",
+      "Even though the movies with Leslie Nielsen came out a long time ago, the picture still looks great to me even today. It's an excellent comedy, and I really loved the actor. I think he is absolutely perfect for this role. A new installment starring Liam Neeson recently came out as well. Overall, the movie is decent. I expected a bit more, of course, but I still ended up enjoying it.",
     thoughtsRu:
-      "С этим фильмом у меня связана интересная история. Где-то лет 15 назад я впервые его посмотрел и запомнил только урывками, включая финальную драку. Недавно решил, что стоит пересмотреть, но проблема была в том, что я напрочь забыл название. Решил поискать с помощью ИИ: давал ему промпты, описывал отрывки, которые помнил. Почти 40 минут пытался найти, но безрезультатно. И вот, спустя пару месяцев, я предпринял попытку номер два - и вуаля, нашел!",
-    cons: "To be honest, I've noticed that Chinese movies often have these unrealistic fight scenes where the main characters jump so high it's like they can fly, plus all this unnecessary over-the-top epicness. It honestly feels like I'm watching an Indian movie sometimes.",
-    consRu:
-      "Если честно, я заметил, что в китайских фильмах часто присутствуют эти нереалистичные боевые сцены, где главные герои запрыгивают так высоко, будто летать умеют, и весь этот ненужный пафос. Такое ощущение, что я смотрю индийский фильм.",
+      "Несмотря на то, что фильмы с Лесли Нильсеном вышли уже давно, даже сейчас картинка выглядит отлично, как по мне. Прекрасная комедия, очень понравился актер. Мне кажется, он идеально подходит на эту роль. Недавно вышла новая часть с Лиамом Нисоном. Фильм в целом нормальный, я, конечно, ожидал большего, но всё же он мне понравился.",
+    cons: "None.",
+    consRu: "Отсутствуют.",
   },
 ];
