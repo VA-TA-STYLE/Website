@@ -47,8 +47,8 @@ export default function Footer({ language }) {
           <Link className="footer-explore-btn" to="/TVSeries">
             {t.tvShows}
           </Link>
-          <Link className="footer-explore-btn" to="/MyProjects">
-            {t.projects}
+          <Link className="footer-explore-btn" to="/AboutMe">
+            {t.aboutme}
           </Link>
         </div>
 
