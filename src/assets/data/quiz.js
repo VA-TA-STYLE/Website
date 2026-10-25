@@ -21,7 +21,7 @@ import TheDeparted from "../images/warmupQuiz/TheDeparted.webp";
 import ShutterIsland from "../images/warmupQuiz/ShutterIsland.webp";
 import Prisoners from "../images/warmupQuiz/Prisoners.webp";
 import Oldboy from "../images/warmupQuiz/Oldboy.webp";
-import Nightcrawler from "../images/warmupQuiz/Nightcrawler.webp";
+import Nightcrawler from "../images/warmupQuiz/NightCrawler.webp";
 import ThePlatform from "../images/warmupQuiz/ThePlatform.webp";
 import BladeRunner from "../images/warmupQuiz/BladeRunner.webp";
 
