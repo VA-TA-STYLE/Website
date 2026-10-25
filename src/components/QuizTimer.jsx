@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/QuizTimer.css";
 
-const INITIAL_TIME = 2111110;
+const INITIAL_TIME = 20;
 
 function formatTime(seconds) {
   const minutes = Math.floor(seconds / 60);
