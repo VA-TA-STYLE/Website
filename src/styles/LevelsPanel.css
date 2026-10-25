@@ -1,0 +1,196 @@
+.levels-glass-panel {
+  width: 350px;
+  background-color: var(--leader-board-background);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border-radius: 15px;
+  padding: 30px 25px;
+  border: var(--leader-board-border);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  color: var(--text);
+}
+
+.levels-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: var(--text);
+  padding-left: 10px;
+}
+
+.levels-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.connecting-line {
+  position: absolute;
+  left: 33px;
+  top: 30px;
+  bottom: 30px;
+  width: 2px;
+  background-color: var(--leader-board-connecting-line-background);
+  z-index: 1;
+}
+
+.level-card {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.level-card.active {
+  background: var(--leader-board-level-card-background-active);
+  border: 1px solid #825aff4d;
+}
+
+.level-card.active .level-circle {
+  background: var(--leader-board-level-circle-active-background);
+  color: var(--text);
+  font-weight: 800;
+  border: none;
+}
+
+.level-card.active .level-texts h3 {
+  color: var(--text);
+}
+
+.level-card.active .level-texts p {
+  color: var(--text);
+}
+
+.level-card.locked {
+  background: transparent;
+}
+
+.level-card.locked .level-circle {
+  background: var(--leader-board-level-circle-blocked-background);
+  border: 1px solid #ffffff1a;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.level-card.locked .level-texts h3 {
+  color: var(--leader-board-level-card-locked-h3-color);
+}
+
+.level-card.locked .level-texts p {
+  color: var(--leader-board-level-card-locked-text-color);
+}
+
+.level-card.locked .level-icon {
+  opacity: 0.6;
+}
+
+.level-circle {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin-right: 15px;
+}
+
+.level-texts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.level-texts h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.level-texts p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.level-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.level-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.level-card.completed {
+  background-color: var(--leader-board-level-card-completed-background);
+  border: var(--leader-board-level-card-border);
+}
+
+.level-card.completed .level-circle {
+  background-color: var(--leader-board-level-circle-completed-background);
+}
+
+.level-card.completed .level-texts h3,
+.level-card.completed .level-texts p {
+  opacity: 0.7;
+}
+
+.level-card.completed .level-icon svg {
+  stroke: #22c55e;
+}
+/* MOBILE LEVEL PANEL */
+
+.mobile-levels-wrapper .levels-glass-panel {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  width: 100%;
+  max-width: 100%;
+}
+
+.mobile-levels-wrapper .levels-title,
+.mobile-levels-wrapper .connecting-line {
+  display: none;
+}
+
+.mobile-levels-wrapper .levels-wrapper {
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 10px;
+  margin-bottom: 15px;
+  scrollbar-width: none; 
+}
+
+.mobile-levels-wrapper .levels-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-levels-wrapper .level-card {
+  flex: 0 0 auto; 
+  min-width: 220px;
+  padding: 7px 10px; 
+}
+.mobile-levels-wrapper .level-icon {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .levels-glass-panel {
+    width: 100%;
+    max-width: 500px;
+  }
+}

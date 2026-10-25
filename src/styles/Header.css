@@ -133,7 +133,7 @@ nav a.active {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   header {
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -241,7 +241,6 @@ nav a.active {
     transition: background-color 0.2s ease;
   }
 
-
   .nav-item-left {
     display: flex;
     align-items: center;
@@ -267,23 +266,27 @@ nav a.active {
   }
 
   .home-icon {
-    -webkit-mask-image: url("../Home-Icon.svg");
-    mask-image: url("../Home-Icon.svg");
+    -webkit-mask-image: url("../HomeIcon.svg");
+    mask-image: url("../HomeIcon.svg");
   }
 
   .movies-icon {
-    -webkit-mask-image: url("../Movie-Icon.svg");
-    mask-image: url("../Movie-Icon.svg");
+    -webkit-mask-image: url("../MovieIcon.svg");
+    mask-image: url("../MovieIcon.svg");
   }
 
   .tv-icon {
-    -webkit-mask-image: url("../Series-Icon.svg");
-    mask-image: url("../Series-Icon.svg");
+    -webkit-mask-image: url("../SeriesIcon.svg");
+    mask-image: url("../SeriesIcon.svg");
+  }
+  .quiz-icon {
+    -webkit-mask-image: url("../QuizIcon.svg");
+    mask-image: url("../QuizIcon.svg");
   }
 
-  .projects-icon {
-    -webkit-mask-image: url("../Projects-Icon.svg");
-    mask-image: url("../Projects-Icon.svg");
+  .about-me-icon {
+    -webkit-mask-image: url("../AboutMeIcon.svg");
+    mask-image: url("../AboutMeIcon.svg");
   }
 }
 @media (max-width: 480px) {

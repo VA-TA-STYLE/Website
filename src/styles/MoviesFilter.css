@@ -52,14 +52,13 @@
   font-weight: 500;
   margin-right: 10px;
   backdrop-filter: blur(10px);
-
 }
 
 .movies-sort select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("/Select-Arrow-Down.svg");
+  background-image: url("/SelectArrowDown.svg");
   background-repeat: no-repeat;
   background-position: right 5px center;
   background-size: 25px;
@@ -82,7 +81,7 @@
   background-color: var(--movies-sort-select-hover-background);
 }
 [data-theme="light"] .movies-sort select {
-  background-image: url("/Select-Arrow-Down-Light.svg");
+  background-image: url("/SelectArrowDownLight.svg");
 }
 @media (max-width: 1024px) {
   .movies-sort label,

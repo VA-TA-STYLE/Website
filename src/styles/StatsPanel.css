@@ -31,16 +31,16 @@
   flex-shrink: 0;
 }
 .movie-icon {
-  mask-image: url("/Movie-Icon.svg");
-  -webkit-mask-image: url("/Movie-Icon.svg");
+  mask-image: url("/MovieIcon.svg");
+  -webkit-mask-image: url("/MovieIcon.svg");
 }
 .rating-icon {
-  mask-image: url("/Rating-Icon.svg");
-  -webkit-mask-image: url("/Rating-Icon.svg");
+  mask-image: url("/RatingIcon.svg");
+  -webkit-mask-image: url("/RatingIcon.svg");
 }
 .series-icon {
-  mask-image: url("/Series-Icon.svg");
-  -webkit-mask-image: url("/Series-Icon.svg");
+  mask-image: url("/SeriesIcon.svg");
+  -webkit-mask-image: url("/SeriesIcon.svg");
 }
 
 .stat-text {

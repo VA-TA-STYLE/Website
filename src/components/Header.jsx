@@ -11,6 +11,7 @@ const translations = {
     collection: "Collection",
     movies: "Movies",
     tvSeries: "TV Series",
+    Quiz: "Quiz",
     aboutMe: "About me",
   },
 
@@ -19,6 +20,7 @@ const translations = {
     collection: "Коллекция",
     movies: "Фильмы",
     tvSeries: "Сериалы",
+    Quiz: "Квиз",
     aboutMe: "Обо мне",
   },
 };
@@ -88,12 +90,22 @@ export default function Header({ language, setLanguage, theme, toggleTheme }) {
           </div>
         </div>
         <NavLink
+          to="/Quiz"
+          onClick={() => setIsMenuOpen(false)}
+          className="nav-item"
+        >
+          <div className="nav-item-left">
+            <div className="nav-icon quiz-icon"></div>
+            <span>{t.Quiz}</span>
+          </div>
+        </NavLink>
+        <NavLink
           to="/AboutMe"
           onClick={() => setIsMenuOpen(false)}
           className="nav-item"
         >
           <div className="nav-item-left">
-            <div className="nav-icon projects-icon"></div>
+            <div className="nav-icon about-me-icon"></div>
             <span>{t.aboutMe}</span>
           </div>
         </NavLink>

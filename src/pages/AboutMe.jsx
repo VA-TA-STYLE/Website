@@ -124,19 +124,18 @@ export default function AboutMe({ language, theme }) {
         <div className="about-image-wrapper">
           <h3 className="terminal-title">{t.terminalTitle}</h3>
           <div className="terminal-card">
-            {/* Шапка терминала с тремя точками (macOS стиль) */}
+
             <div className="terminal-header">
               <span className="mac-btn close"></span>
               <span className="mac-btn minimize"></span>
               <span className="mac-btn expand"></span>
             </div>
 
-            {/* Тело терминала */}
             <div className="terminal-body">
-              {/* Вертикальная линия соединения */}
+    
               <div className="timeline-line"></div>
 
-              {/* Шаг 1 */}
+         
               <div className="log-entry">
                 <div className="log-icon git-icon">
                   <FaGitAlt size={18} />
@@ -147,7 +146,7 @@ export default function AboutMe({ language, theme }) {
                 </div>
               </div>
 
-              {/* Шаг 2 */}
+       
               <div className="log-entry">
                 <div className="log-icon npm-icon">
                   <FaNpm size={18} />
@@ -160,7 +159,7 @@ export default function AboutMe({ language, theme }) {
                 </div>
               </div>
 
-              {/* Шаг 3 */}
+        
               <div className="log-entry">
                 <div className="log-icon react-icon">
                   <FaReact size={18} />

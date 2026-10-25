@@ -1,0 +1,175 @@
+.quiz-timer-panel {
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 24px;
+  margin-top: auto;
+  background: var(--quiz-container-background);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 18px;
+  color: var(--text);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.quiz-timer-panel h3 {
+  margin: 0 0 24px;
+  text-align: left;
+  font-size: 1.15rem;
+}
+
+.timer-circle {
+  width: 115px;
+  height: 115px;
+  margin: 0 auto 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: var(--quiz-timer-circle-border);
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  background: rgba(118, 87, 255, 0.08);
+  box-shadow: 0 0 20px rgba(118, 87, 255, 0.15);
+}
+
+.timer-circle span {
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+
+.timer-progress {
+  width: 100%;
+  height: 7px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: rgba(128, 128, 128, 0.2);
+}
+
+.timer-progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--quiz-timer-progress-fill-background);
+  transition: width 0.5s linear;
+}
+
+.quiz-timer-panel p {
+  margin: 12px 0 0;
+  font-size: 0.85rem;
+  opacity: 0.65;
+}
+.timer-danger {
+  border-color: #ff4545;
+  color: #ff4545;
+  box-shadow: 0 0 20px rgba(255, 69, 69, 0.25);
+}
+
+.timer-danger + .timer-progress {
+  background: rgba(255, 69, 69, 0.15);
+}
+
+.timer-danger ~ .timer-progress .timer-progress-fill {
+  background: #ff4545;
+}
+
+.quiz-image-wrapper {
+  position: relative; /* <-- Именно это вернет таймер внутрь фото */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-radius: 15px; /* Скругление как у картинки */
+  overflow: hidden;
+}
+
+.quiz-image-wrapper .mobile-timer-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+/* 2. Превращаем панель в компактную полупрозрачную плашку */
+.quiz-image-wrapper .mobile-timer-wrapper .quiz-timer-panel {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 6px 12px;
+  border-radius: 20px;
+  min-height: auto;
+  width: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 3. Прячем всё лишнее (заголовок, прогресс-бар, лишние тексты) */
+.quiz-image-wrapper .mobile-timer-wrapper .quiz-timer-panel h3,
+.quiz-image-wrapper .mobile-timer-wrapper .quiz-timer-panel .timer-progress,
+.quiz-image-wrapper .mobile-timer-wrapper .quiz-timer-panel p,
+.quiz-image-wrapper
+  .mobile-timer-wrapper
+  .quiz-timer-panel
+  .timer-circle
+  small {
+  display: none;
+}
+
+/* 4. Убираем фиолетовое кольцо, оставляем только контейнер для цифр */
+.quiz-image-wrapper .mobile-timer-wrapper .quiz-timer-panel .timer-circle {
+  width: auto;
+  height: auto;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* 5. Стилизуем сами цифры */
+.quiz-image-wrapper .mobile-timer-wrapper .quiz-timer-panel .timer-circle span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: 1px;
+}
+
+/* 6. Добавляем иконку секундомера перед временем */
+.quiz-image-wrapper
+  .mobile-timer-wrapper
+  .quiz-timer-panel
+  .timer-circle
+  span::before {
+  content: "⏱";
+  font-size: 16px;
+}
+
+/* 7. Красный цвет, когда времени мало */
+.quiz-image-wrapper
+  .mobile-timer-wrapper
+  .quiz-timer-panel
+  .timer-circle.timer-danger
+  span {
+  color: #ff4757;
+}
+
+@media (max-width: 1024px) {
+  .quiz-timer-panel {
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+}

@@ -5,6 +5,7 @@ import Main from "./pages/Main";
 import Footer from "./components/Footer";
 import Movies from "./pages/Movies";
 import TVSeries from "./pages/TVSeries";
+import Quiz from "./pages/Quiz";
 import AboutMe from "./pages/AboutMe";
 import ScrollToTop from "./components/ScrollToTop";
 import Privacy from "./pages/legal/Privacy";
@@ -61,6 +62,7 @@ function App() {
           />
           <Route path="/movies" element={<Movies language={language} theme={theme} />} />
           <Route path="/TVSeries" element={<TVSeries language={language}  theme={theme}/>} />
+           <Route path="/Quiz" element={<Quiz language={language}  theme={theme}/>} />
           <Route
             path="/AboutMe"
             element={<AboutMe language={language} theme={theme} />}

@@ -1,0 +1,56 @@
+.leaderboard-card {
+  background-color: var(--welcome-screen-background);
+  border-radius: 20px;
+  padding: 25px;
+  color: var(--text);
+  width: 320px;
+  min-height: 270px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.leaderboard-title {
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-emoji {
+  font-size: 25px;
+}
+
+.leaderboard-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+.leaderboard-list li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text)
+}
+
+.player-rank {
+  margin-right: 10px;
+  min-width: 20px; 
+}
+
+.player-name {
+  margin-right: 5px;
+}
+
+.player-score {
+  color: #eaeaea;
+}

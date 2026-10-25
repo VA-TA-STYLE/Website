@@ -22,8 +22,9 @@ import Backrooms from "../images/movies-images/Backrooms.webp";
 import FNAF from "../images/movies-images/FNAF.webp";
 import Alive from "../images/movies-images/Alive.webp";
 import RequemForDream from "../images/movies-images/RequemForDream.webp";
-import LegendaryAssassin from "../images/movies-images/LegendaryAssassin.webp"; // NOT READY //
-import NakedGun from "../images/movies-images/NakedGun.webp"; // NOT READY //
+import LegendaryAssassin from "../images/movies-images/LegendaryAssassin.webp";
+import NakedGun from "../images/movies-images/NakedGun.webp";
+import TheOtherGuys from "../images/movies-images/TheOtherGuys.webp";
 export const movies = [
   {
     id: 1,
@@ -87,7 +88,7 @@ export const movies = [
     duration: "2h 18m",
     durationRu: "2ч 18м",
     image: ShutterIsland,
-    rating: 7,
+    rating: 8,
     thoughts:
       "Leonardo DiCaprio is one of my favorite actors, so it’s no surprise that I really enjoyed this movie as well. I liked the way he investigated the disappearance of the patient, and the whole movie kept me feeling tense and curious about what was really going on. My favorite quote from the ending is: “Which would be worse: to live as a monster, or to die as a good man?” I still don't fully understand the ending. Did he actually realize the truth and deliberately choose to be lobotomized, or did he genuinely lose himself in his delusions again? That ambiguity is what makes the ending so interesting. It still feels like a mystery to me.",
     thoughtsRu:
@@ -670,6 +671,31 @@ export const movies = [
       "Even though the movies with Leslie Nielsen came out a long time ago, the picture still looks great to me even today. It's an excellent comedy, and I really loved the actor. I think he is absolutely perfect for this role. A new installment starring Liam Neeson recently came out as well. Overall, the movie is decent. I expected a bit more, of course, but I still ended up enjoying it.",
     thoughtsRu:
       "Несмотря на то, что фильмы с Лесли Нильсеном вышли уже давно, даже сейчас картинка выглядит отлично, как по мне. Прекрасная комедия, очень понравился актер. Мне кажется, он идеально подходит на эту роль. Недавно вышла новая часть с Лиамом Нисоном. Фильм в целом нормальный, я, конечно, ожидал большего, но всё же он мне понравился.",
+    cons: "None.",
+    consRu: "Отсутствуют.",
+  },
+  {
+    id: 27,
+    title: "The Other Guys",
+    titleRu: "Копы в глубоком запасе",
+    description:
+      "Two mismatched New York City desk-bound detectives seize an opportunity to step up and be like the city's top cops, whom they idolize. However, things don't quite go as planned.",
+    descriptionRu:
+      "Двое совершенно разных нью-йоркских детективов, прозябающих на бумажной работе, получают шанс стать такими же крутыми копами, как их кумиры. Однако всё идёт совсем не по плану.",
+    year: "2010",
+    genre: "Action, Comedy",
+    genreRu: "Боевик, Комедия",
+    imdb: 6.6,
+    rating: 10,
+    duration: "1h 47m",
+    durationRu: "1ч 47м",
+    image: TheOtherGuys,
+    review: "Review",
+    reviewRu: "Рецензия",
+    thoughts:
+      "I absolutely loved this movie. The dynamic between the partners is hilarious, especially the oblivious one who just doesn't seem to understand how the real world works—like being completely blind to how gorgeous his own wife is or missing the most obvious social cues. Actor Will Ferrell is just a perfect fit for this role! Their absurd arguments make the whole film. I also vividly remember the moment when the other partner goes to the captain to get his gun back and just drops the line, 'Gator needs his gat, you punk-ass bitch!'",
+    thoughtsRu:
+      "Фильм мне очень сильно понравился. Динамика между напарниками просто уморительная, особенно тот туповатый коп, который вообще не понимает, как устроен реальный мир - например, он в упор не замечает, насколько его собственная жена невероятно красива, и постоянно не выкупает очевидные вещи. Актёр Уилл Феррелл просто идеально подходит на эту роль! Их абсурдные диалоги делают весь фильм. Ещё сильно запомнился момент, когда второй напарник заходит к начальнику за своим стволом и выдаёт: «Аллигатору нужен ствол, вонючий ты ублюдок!»",
     cons: "None.",
     consRu: "Отсутствуют.",
   },

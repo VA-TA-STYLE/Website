@@ -14,7 +14,7 @@
   /* HEADER */
   --header-background: transparent;
   --header-box-shadow: 0px 0px 23px 12px #0000004d;
-  --header-logo-background:  #fffefefd;
+  --header-logo-background: #fffefefd;
   --collection-menu: #232633;
   --collection-menu-box-shadow: 0 8px 20px #0000004d;
   --collection-menu-hover: #333333;
@@ -61,7 +61,7 @@
   --footer-border-top: 1px solid #ffffff;
   --footer-links-icon-color: #6c5ce7;
 
-  /*  MOVIES & SERIES & GAMES */
+  /*  MOVIES & SERIES */
   --movies-carousel-background: #050b1698;
   --movies-carousel-badge-background: #5946f5e6;
   --movies-carousel-border: 1px solid #393080a1;
@@ -96,6 +96,42 @@
   --pagination-button-active: #6c5ce7;
   --pagination-button-hover: #6c5ce7;
 
+  /* QUIZ */
+  --quiz-container-background: #1922359f;
+  --quiz-option-text-background: #6c5ce775;
+  --quiz-option-text-hover-background: #7657ffec;
+  --welcome-screen-background: #252949;
+  --welcome-screen-input-background: #1e2136;
+  --welcome-screen-input-border: 1px solid #ffffff2c;
+  --welcome-screen-button-background: #6c5ce7;
+
+  --leader-board-background: #1922359f;
+  --leader-board-border: border: 1px solid #ffffff0d;
+  --leader-board-connecting-line-background: #ffffff2f;
+  --leader-board-level-card-background-active: linear-gradient(
+    90deg,
+    #4b24bfe6 0%,
+    #371978cc 100%
+  );
+  --leader-board-level-circle-background-active: #a37cff;
+  --leader-board-level-card-completed-background: #22c55e57;
+  --leader-board-level-card-border: 1px solid #22c55e66;
+  --leader-board-level-circle-active-background: #a37cff;
+  --leader-board-level-card-locked-h3-color: #ffffffb3;
+  --leader-board-level-card-locked-text-color: #ffffff4d;
+  --leader-board-level-circle-blocked-background: #ffffff18;
+  --leader-board-level-circle-completed-background: #1ac057;
+
+  --quiz-timer-circle-border: 5px solid #7657ff;
+  --quiz-timer-progress-fill-background: #7657ff;
+
+  --quiz-stats-background: #0f172a9f;
+  --quiz-stats-border: 1px solid #ffffff1a;
+  --quiz-stats-row-background: #ffffff18;
+  --quiz-stats-vertical-scrollbar: #ffffff69;
+  --quiz-stats-text-color: #cbd5e1;
+  --quiz-stats-current-player-background: #6467f233;
+  --quiz-stats-current-player-border: 1px solid #6366f180;
   /* ABOUT ME */
   --skill-card-background: #ffffff10;
   --skill-card-border: 1px solid #ffffff1a;
@@ -116,7 +152,7 @@
   /* HEADER */
   --header-background: #e6f0fa67;
   --header-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.05);
-  --header-logo-background:  #050505fd;
+  --header-logo-background: #050505fd;
   --collection-menu: #ffffff;
   --collection-menu-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   --collection-menu-hover: #f1f5f9;
@@ -198,6 +234,42 @@
   --pagination-button-active: #3b82f6;
   --pagination-button-hover: #3b82f6;
 
+  /* QUIZ */
+  --quiz-container-background: #ffffff99;
+  --quiz-option-text-background: #3b83f694;
+  --quiz-option-text-hover-background: #3b82f6;
+  --welcome-screen-background: #e6f0fa;
+  --welcome-screen-input-background: #e9ecef;
+  --welcome-screen-input-border: 1px solid #ced4da;
+  --welcome-screen-button-background: #3b82f6;
+
+  --leader-board-background: #ffffff99;
+  --leader-board-border: 3px solid #94a3b8;
+  --leader-board-connecting-line-background: #2374f793;
+  --leader-board-level-card-background-active: linear-gradient(
+    90deg,
+    #3b82f6e6 0%,
+    #3b82f6cc 100%
+  );
+  --leader-board-level-circle-background-active: #a37cff;
+  --leader-board-level-card-completed-background: #22c55ebd;
+  --leader-board-level-card-border: 1px solid #22c55e66;
+  --leader-board-level-circle-active-background: #ffffff8e;
+  --leader-board-level-card-locked-h3-color: #524d4d;
+  --leader-board-level-card-locked-text-color: #524d4d;
+  --leader-board-level-circle-blocked-background: #ffffffa1;
+  --leader-board-level-circle-completed-background: #2cf877;
+
+  --quiz-timer-circle-border: 5px solid #3b82f6;
+  --quiz-timer-progress-fill-background: #3b82f6;
+
+  --quiz-stats-background: #3b83f6c4;
+  --quiz-stats-border: 1px solid #ffffff1a;
+  --quiz-stats-row-background: #ffffff83;
+  --quiz-stats-vertical-scrollbar: #ffffff69;
+  --quiz-stats-text-color: black;
+  --quiz-stats-current-player-background: #e7e8f833;
+   --quiz-stats-current-player-border: 1px solid #000000;
   /* ABOUT ME */
   --skill-card-background: #f8fafc;
   --skill-card-border: 2px solid #e2e8f0;

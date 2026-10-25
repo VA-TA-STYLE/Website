@@ -11,7 +11,7 @@
   border-right: var(--switch-theme-border-right);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .switch-theme button {
     padding: 6px 18px;
     margin-right: 0px;
