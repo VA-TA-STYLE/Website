@@ -5,8 +5,8 @@
   padding: 24px;
   margin-top: auto;
   background: var(--quiz-container-background);
-  backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   border-radius: 18px;
   color: var(--text);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -42,7 +42,6 @@
   font-weight: 700;
   font-variant-numeric: tabular-nums;
 }
-
 
 .timer-progress {
   width: 100%;
