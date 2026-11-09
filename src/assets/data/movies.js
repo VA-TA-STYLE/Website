@@ -25,6 +25,8 @@ import RequemForDream from "../images/movies-images/RequemForDream.webp";
 import LegendaryAssassin from "../images/movies-images/LegendaryAssassin.webp";
 import NakedGun from "../images/movies-images/NakedGun.webp";
 import TheOtherGuys from "../images/movies-images/TheOtherGuys.webp";
+import ResidentEvil from "../images/movies-images/ResidentEvil.webp";
+import Exit8 from "../images/movies-images/Exit8.webp";
 export const movies = [
   {
     id: 1,
@@ -698,5 +700,57 @@ export const movies = [
       "Фильм мне очень сильно понравился. Динамика между напарниками просто уморительная, особенно тот туповатый коп, который вообще не понимает, как устроен реальный мир - например, он в упор не замечает, насколько его собственная жена невероятно красива, и постоянно не выкупает очевидные вещи. Актёр Уилл Феррелл просто идеально подходит на эту роль! Их абсурдные диалоги делают весь фильм. Ещё сильно запомнился момент, когда второй напарник заходит к начальнику за своим стволом и выдаёт: «Аллигатору нужен ствол, вонючий ты ублюдок!»",
     cons: "None.",
     consRu: "Отсутствуют.",
+  },
+  {
+    id: 28,
+    title: "Resident Evil",
+    titleRu: "Обитель зла",
+    description:
+      "Medical courier Bryan Hodukavich must fight through an outbreak of infected monsters in Raccoon City.",
+    descriptionRu:
+      "Медицинский курьер Брайан должен противостоять атаке мутировавших монстров и найти способ выбраться из зараженной зоны Раккун-Сити в условиях полного хаоса.",
+    year: "2026",
+    genre: "Horror",
+    genreRu: "Ужасы",
+    imdb: 7.6,
+    rating: 9,
+    duration: "1h 34m",
+    durationRu: "1ч 34м",
+    image: ResidentEvil,
+    review: "Review",
+    reviewRu: "Рецензия",
+    thoughts:
+      "At first, when the movie came out, I was skeptical about it because I didn't really like the previous chapters, but I decided to watch it anyway and was left with a good impression. Compared to the other parts, this one is more of a horror movie than an action movie. I really liked the beginning, the whole atmosphere, how he runs away from the dog, then goes into the farmhouse, and through the window sees that girl running towards him - it was very atmospheric.",
+    thoughtsRu:
+      "Сначала, когда фильм вышел, я скептически отнесся к нему, потому что предыдущие части мне не очень-то и понравились, но все же решил посмотреть и остался под хорошим впечатлением. По сравнению с другими частями, этот скорее ужастик, нежели боевик. Начало мне очень сильно понравилось, вся эта атмосфера, то, как он убегает от собаки, потом заходит в домик на ферме и в окне видит, как та девушка бежит к нему - это было очень атмосферно.",
+    cons: "As in all horror movies, the main character sometimes annoys you by making stupid mistakes and acting irrationally. Also, at the end, when the protagonist brings the vaccine component, for some reason the scientists let him into their lab without even asking if he's infected.",
+    consRu:
+      "Как и во всех ужасах, герой иногда бесит тем, что совершает тупые ошибки и поступает неразумно. А ещё в конце, когда главный герой принес компонент для прививки, ученые почему-то впускают его в свою лабораторию и даже не спрашивают, не инфицирован ли он.",
+  },
+  {
+    id: 29,
+    title: "Exit 8",
+    titleRu: "Выход 8",
+    description:
+      "A man is caught in a looping subway corridor and must spot possible anomalies in each loop to escape.",
+    descriptionRu:
+      "Главный герой оказывается заперт в бесконечных переходах метро, и чтобы открыть выход, ему нужно не упускать ни одной аномалии в повторяющемся пейзаже.",
+    year: "2025",
+    genre: "Thriller",
+    genreRu: "Триллер",
+    imdb: 6.8,
+    rating: 7,
+    duration: "1h 35m",
+    durationRu: "1ч 35м",
+    image: Exit8,
+    review: "Review",
+    reviewRu: "Рецензия",
+    thoughts:
+      "I accidentally stumbled upon this movie and decided to watch it. The concept is quite interesting; it was intriguing to see if the main character would get out of this situation. I also carefully observed the details in the movie to see if any anomalies were visible.",
+    thoughtsRu:
+      "Случайно наткнулся на этот фильм и решил посмотреть. Задумка довольно интересная, было интересно наблюдать, выйдет ли главный герой из этой ситуации. Я тоже внимательно наблюдал за деталями в фильме, не видно ли аномалий.",
+    cons: "I think I chose the wrong time to watch this movie. I believe such films should be watched with friends to discuss whether there are anomalies or not, but I watched it alone and during the day. It didn't feel as atmospheric as it could have been with friends, and I also think the movie is a bit dragged out.",
+    consRu:
+      "Мне кажется, я выбрал неподходящее время, чтобы посмотреть этот фильм. Я думаю, такие фильмы надо смотреть вместе с друзьями и обсуждать с ними, есть ли аномалии или нет, а я смотрел один, да еще и в дневное время. Не получилось так атмосферно, как могло бы быть с друзьями. А еще мне кажется, что фильм немного растянут.",
   },
 ];
