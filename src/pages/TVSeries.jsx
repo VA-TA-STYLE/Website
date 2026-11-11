@@ -14,7 +14,7 @@ import SeriesBackground from "../assets/series/SeriesBackground.webp";
 import SeriesBackgroundLight from "../assets/series/SeriesBackgroundLight.webp";
 import SeriesBackgroundMobile from "../assets/series/SeriesBackgroundMobile.webp";
 import SeriesBackgroundLightMobile from "../assets/series/SeriesBackgroundLightMobile.webp";
-import TheRingsOfPower from "../assets/images/waiting-images/TheRingsOfPower.webp";
+import VoughtRising from "../assets/images/waiting-images/VoughtRising.webp";
 import TenThousandsShips from "../assets/images/waiting-images/TenThousandsShips.webp";
 import TheWitcher from "../assets/images/waiting-images/TheWitcher.webp";
 const translations = {
@@ -61,13 +61,13 @@ const translations = {
 const upcomingSeries = [
   {
     id: 1,
-    title: { eng: "The Rings of Power", rus: "Кольца Власти" },
-    img: TheRingsOfPower,
-    releaseDate: "2026-11-11T00:00:00",
+    title: { eng: "Vought Rising", rus: "Восход корпорации Vought" },
+    img: VoughtRising,
+    releaseDate: "2027",
   },
   {
     id: 2,
-    title: { eng: "10 000 Ships", rus: "!0 000 Кораблей" },
+    title: { eng: "10 000 Ships", rus: "10 000 Кораблей" },
     img: TenThousandsShips,
     releaseDate: "2028-11-01T00:00:00",
   },
@@ -168,7 +168,7 @@ export default function TVSeries({ language, timeLeft, theme }) {
             className="movies-hero-image"
             alt="bg"
             fetchPriority="high"
-          />  
+          />
         </picture>
         <div className="movies-intro-text">
           <p className="movies-label">{t.label}</p>

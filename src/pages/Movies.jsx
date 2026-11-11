@@ -15,6 +15,7 @@ import MoviesBackgroundLightMobile from "../assets/movies/MoviesBackgroundLightM
 import DuneThree from "../assets/images/waiting-images/DuneThree.webp";
 import Odyssey from "../assets/images/waiting-images/Odyssey.webp";
 import AvengersDoomsday from "../assets/images/waiting-images/AvengersDoomsday.webp";
+import Gollum from "../assets/images/waiting-images/Gollum.webp";
 import "../styles/Movies.css";
 const translations = {
   eng: {
@@ -75,6 +76,15 @@ const upcomingMovies = [
     title: { eng: "Avengers: Doomsday", rus: "Мстители: Судный день" },
     img: AvengersDoomsday,
     releaseDate: "2026-12-18T00:00:00",
+  },
+  {
+    id: 4,
+    title: {
+      eng: "Hunt for Gollum",
+      rus: "Охота на Голлума",
+    },
+    img: Gollum,
+    releaseDate: "2027-12-17T00:00:00",
   },
 ];
 export default function Movies({ language, timeLeft, theme }) {
