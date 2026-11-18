@@ -22,10 +22,11 @@
   animation: scrollCards 100s linear infinite;
 }
 
-.main-movie-cards-track:hover {
-  animation-play-state: paused;
+@media (hover: hover) and (pointer: fine) {
+  .main-movie-cards-track:hover {
+    animation-play-state: paused;
+  }
 }
-
 @keyframes scrollCards {
   0% {
     transform: translateX(0);
