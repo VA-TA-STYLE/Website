@@ -11,7 +11,7 @@ import SpiderMan from "../images/movies-images/SpiderMan.webp";
 import FightClub from "../images/movies-images/FightClub.webp";
 import FastAndFurious from "../images/movies-images/FastAndFurious.webp";
 import BulletTrain from "../images/movies-images/BulletTrain.webp";
-import Odyssey from "../images/movies-images/Odyssey.webp"; // NOT READY //
+import Odyssey from "../images/movies-images/Odyssey.webp"; 
 import Troy from "../images/movies-images/Troy.webp"; // NOT READY //
 import ShawshenkRedemption from "../images/movies-images/ShawshenkRedemption.webp";
 import TheGladiator from "../images/movies-images/TheGladiator.webp"; // NOT READY //

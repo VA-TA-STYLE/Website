@@ -52,5 +52,5 @@
 }
 
 .player-score {
-  color: black;
+  color: var(--text);
 }
