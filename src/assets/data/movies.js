@@ -370,10 +370,13 @@ export const movies = [
     image: Odyssey,
     review: "Review",
     reviewRu: "Рецензия",
-    thoughts: "Haven't watched yet.",
-    thoughtsRu: "Еще не смотрел.",
-    cons: ".",
-    consRu: ".",
+    thoughts:
+      "I waited a long time for a high-quality version, and I finally watched this nearly 3-hour movie. I really love the antiquity theme, so naturally, I absolutely loved this film. The moment when the giant cyclops trapped them in the cave was very thrilling and scary. Also, the scene where Odysseus was tied to the ship's mast while everyone else plugged their ears with wax was actually pretty amusing. Now I want to rewatch the movie Troy.",
+    thoughtsRu:
+      "Я долго ждал хорошего качества и наконец-то посмотрел этот фильм длиною почти в 3 часа. Мне сильно нравится тематика античности, и, понятное дело, этот фильм мне очень зашел. Момент, когда гигант-циклоп закрыл их в пещере, был очень волнующим и пугающим. А сцена, где Одиссея привязали к мачте корабля, а все остальные закрыли уши воском, показалась даже забавной. Теперь хочу пересмотреть фильм «Троя».",
+    cons: "I didn't really like the final scene where he slaughters the arrogant suitors, specifically how about 50 men somehow couldn't tackle a single archer to the ground. For me, that was definitely a bit overkill.",
+    consRu:
+      "Мне не очень понравилась финальная сцена расправы над наглыми женихами, а именно то, как человек 50 не могут повалить на землю одного лучника. Как по мне, это уже явный перебор.",
   },
   {
     id: 15,
