@@ -364,7 +364,7 @@ export const movies = [
     genre: "Adventure",
     genreRu: "Приключения",
     imdb: 8.5,
-    rating: 0,
+    rating: 9,
     duration: "2h 52m",
     durationRu: "2ч 52м",
     image: Odyssey,
